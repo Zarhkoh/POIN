@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { MeteoLargeComponent } from './components/meteo-large/meteo-large.component';
 import { MeteoTinyComponent } from './components/meteo-tiny/meteo-tiny.component';
 import { GestureComponent } from './components/gesture/gesture.component';
