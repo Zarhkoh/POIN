@@ -1,4 +1,4 @@
 <div *ngFor="let m of METEO.weather">
     <p>{{ now | date:'HH:mm'}}</p>
-    <p>{{ m.main }}</p>
+    <img src="http://openweathermap.org/img/wn/{{m.icon}}@2x.png" alt="weather_icon">
 </div>
