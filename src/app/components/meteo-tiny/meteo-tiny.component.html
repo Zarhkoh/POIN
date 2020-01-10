@@ -1,1 +1,4 @@
-<p>meteo-tiny works!</p>
+<div *ngFor="let m of METEO.weather">
+    <p>{{ now | date:'HH:mm'}}</p>
+    <p>{{ m.main }}</p>
+</div>
