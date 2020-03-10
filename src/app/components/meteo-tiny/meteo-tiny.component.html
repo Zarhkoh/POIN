@@ -1,6 +1,6 @@
 <div *ngFor="let m of METEO.weather" id="tiny">
-    <div id="hours">
-        <p>{{ now | date:'HH:mm'}}</p>
-    </div>
-    <img src="http://openweathermap.org/img/wn/{{m.icon}}@2x.png" alt="weather_icon">
+  <div id="hours">
+    <p>{{ now | date:'HH:mm'}}</p>
+  </div>
+  <img src="../../../assets/meteo/{{m.icon}}.png" alt="weather_icon">
 </div>

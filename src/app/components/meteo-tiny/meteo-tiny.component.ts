@@ -8,9 +8,9 @@ import { WeatherService } from '../../services/weather.service';
 })
 export class MeteoTinyComponent implements OnInit {
 
-  // Variables Weather 
+  // Variables Weather
   METEO;
-  city = 'Lille'
+  city = 'Lille';
   appid = 'ecffadd0f704673d5bfa3386bbe949f5';
 
   // Variables Date
@@ -18,9 +18,9 @@ export class MeteoTinyComponent implements OnInit {
 
   constructor(private weatherService: WeatherService) {
     // Function Date
-      setInterval(() => {
-        this.now = new Date();
-      }, 1);
+    setInterval(() => {
+      this.now = new Date();
+    }, 1);
   }
 
   ngOnInit() {
