@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { MeteoTinyComponent } from './components/meteo-tiny/meteo-tiny.component';
 import { GestureComponent } from './components/gesture/gesture.component';
 import { InfosScrollingComponent } from './components/infos-scrolling/infos-scrolling.component';
+import { PlanComponent } from './components/plan/plan.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { InfosScrollingComponent } from './components/infos-scrolling/infos-scro
     HomeComponent,
     MeteoTinyComponent,
     GestureComponent,
-    InfosScrollingComponent
+    InfosScrollingComponent,
+    PlanComponent
   ],
   imports: [
     BrowserModule,
