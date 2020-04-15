@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivitiesService } from 'src/app/services/activities.service';
 
 @Component({
   selector: 'app-activities',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./activities.component.css']
 })
 export class ActivitiesComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+activities;
+  constructor(private activitiesService: ActivitiesService) { 
   }
 
+  ngOnInit() {
+    this.getAllActivities();
+  }
+
+  getAllActivities(){
+    this.activities = this.activitiesService.getAllActivities().subscribe((data) => this.activities = data);
+  }
 }

@@ -2,9 +2,19 @@
   <app-meteo-tiny></app-meteo-tiny>
 </div>
 <div id="content">
-  <div>
-    <!-- mettre ici le component des activités dispo een  -->
-  </div>
+  <div class="container">
+  <div class="row justify-content-center">
+    <div *ngFor="let activity of activities" class="activityCard col-4">
+      <div class="card">
+        <img src="{{activity.picture}}" class="card-img-top justify-content-center">
+          <div class="container card-body">
+            <h4 class="card-title">{{activity.title}}</h4>
+            <p class="card-text">{{activity.description}}</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
   <div id="ad" class="fixed-bottom">
     <app-hotel-ads></app-hotel-ads>
   </div>
