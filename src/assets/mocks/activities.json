@@ -1,0 +1,31 @@
+[{
+    "id": 1,
+    "title": "Espace bien-être",
+    "description": "Espace détente, tisanerie, soins et gamme de produits naturels. Sauna, hammam et douches aux vertus apaisantes. Consacré à la relaxation au sport et à la beauté, le 4e étage de l'Hotêl Barrière Lille vous réserve d'exquis moments de quiétude.",
+    "picture": "/assets/images/activities/spa.png"
+  }, {
+    "id": 2,
+    "title": "L'Escal'777",
+    "description": "Ambiance grand hôtel, L'Escal'7777 invite à tous les voyages. Dans un décor épuré en turquoise, taupe et chocolat, un grand choix de cocktails et de thés est proposé. Délicieux intermède avant d'aller dîner ou étape exquise de fin de soirée.",
+    "picture": "/assets/images/activities/escal777.png"
+  }, {
+    "id": 3,
+    "title": "Le casino",
+    "description": "Répartis sur deux étages, 300 Machines à sous, 20 Tables de jeux et des bars thématiques. Plus grad espace ludique de la région Hauts-de-France, le Casino Barrière Lille, 22500m², vous divertit jusqu'au bout de la nuit.",
+    "picture": "/assets/images/activities/casino.png"
+  }, {
+    "id": 4,
+    "title": "Le théatre",
+    "description": "One-man-show, concerts, danses... le somptueux Théatre de l'Hôtel Barrière Lille présente une soixantaine de spectacles chaque année. La possibilité de dîner sur place et de réunir de grandes tablées permet de prolonger ces moments festifs.",
+    "picture": "/assets/images/activities/theatre.png"
+  }, {
+    "id": 5,
+    "title": "Salle de sport",
+    "description": "Au coeur de l'Espace bien-être de 150m², la salle de fitness est réservée aux clients de l'Hôtel Barrière Lille. Profites d'équipements de dernière génération et dépensez-vous à votre rythme sur des appareils Technogym®",
+    "picture": "/assets/images/activities/sport.png"
+  }, {
+    "id": 6,
+    "title": "Terrasse du Parc",
+    "description": "Grande tablée, alcôve intime ou terrasse chauffée. Petits plats, salades et spécialités régionales. Aut rez-de-chaussée du Casino Barrière Lille, la Terrasse du Parc perpétue la convivialité du Nord et propose un brunch chaque dimanche.",
+    "picture": "/assets/images/activities/terrasse_du_parc.png"
+  }]

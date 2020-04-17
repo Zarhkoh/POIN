@@ -8,6 +8,8 @@ import { HomeComponent } from './components/home/home.component';
 import { MeteoTinyComponent } from './components/meteo-tiny/meteo-tiny.component';
 import { GestureComponent } from './components/gesture/gesture.component';
 import { InfosScrollingComponent } from './components/infos-scrolling/infos-scrolling.component';
+import { ActivitiesComponent } from './components/activities/activities.component';
+import { HotelAdsComponent } from './components/hotel-ads/hotel-ads.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { InfosScrollingComponent } from './components/infos-scrolling/infos-scro
     HomeComponent,
     MeteoTinyComponent,
     GestureComponent,
-    InfosScrollingComponent
+    InfosScrollingComponent,
+    ActivitiesComponent,
+    HotelAdsComponent
   ],
   imports: [
     BrowserModule,
