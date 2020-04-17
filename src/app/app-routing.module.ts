@@ -8,7 +8,11 @@ import { TarificationComponent } from "./components/tarification/tarification.co
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'plan', component: PlanComponent },
-  { path: 'tarification', component: TarificationComponent}
+  { path: 'tarification/room-service', component: TarificationComponent},
+  { path: 'tarification/multimedia', component: TarificationComponent},
+  { path: 'tarification/mini-bar', component: TarificationComponent},
+  { path: 'tarification/laundry', component: TarificationComponent}
+
 ];
 
 @NgModule({

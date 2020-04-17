@@ -10,7 +10,6 @@ import { GestureComponent } from './components/gesture/gesture.component';
 import { InfosScrollingComponent } from './components/infos-scrolling/infos-scrolling.component';
 import { PlanComponent } from './components/plan/plan.component';
 import { TarificationComponent } from './components/tarification/tarification.component';
-
 @NgModule({
   declarations: [
     AppComponent,

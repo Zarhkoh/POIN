@@ -1,9 +1,9 @@
 <div id="wrapper">
-  <section class="item-1">
+  <section *ngIf="router.url === '/tarification/room-service'" class="item-1">
     <h1>Room-Service</h1>
   </section>
 
-  <div id="lunch" class="drop-dwn">
+  <div *ngIf="router.url === '/tarification/room-service'" id="lunch" class="drop-dwn">
     <div class="row">
       <div class="col">
         <h2 class="title">Service en chambre</h2>
@@ -40,12 +40,12 @@
       <p>Tout les plats de notre carte sont disponible en room-service avec un supplément de 3€</p>
     </div>
   </div>
-</div>
+  </div>
 
-  <section class="item-2">
+  <section *ngIf="router.url === '/tarification/mini-bar'" class="item-2">
     <h1>Mini-bar</h1>
   </section>
-  <div id="dinner" class="drop-dwn">
+  <div *ngIf="router.url === '/tarification/mini-bar'" id="dinner" class="drop-dwn">
     <div class="row">
       <div class="col">
         <h2 class="title">Boissons et snacks</h2>
@@ -81,10 +81,10 @@
     </div>
   </div>
 
-  <section class="item-3">
+  <section *ngIf="router.url === '/tarification/multimedia'" class="item-3">
     <h1>WIFI</h1>
   </section>
-  <div id="desserts" class="drop-dwn">
+  <div *ngIf="router.url === '/tarification/multimedia'" id="desserts" class="drop-dwn">
     <div class="row">
       <div class="col">
         <h2 class="title">Connexion wifi en chambre</h2>
@@ -104,10 +104,10 @@
     </div>
   </div>
 
-  <section class="item-4">
+  <section *ngIf="router.url === '/tarification/laundry'" class="item-4">
     <h1>Laundry</h1>
   </section>
-  <div id="drinks" class="drop-dwn">
+  <div *ngIf="router.url === '/tarification/laundry'" id="drinks" class="drop-dwn">
     <div class="row">
       <div class="col">
         <h2 class="title">Blanchisserie</h2>
