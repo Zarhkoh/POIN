@@ -1,0 +1,34 @@
+[{
+  "wifi": [
+    {
+      "id": 1,
+      "prestation": "Wifi à la journée",
+      "prix" : "4€"
+    },
+    {
+      "id": 2,
+      "prestation": "Wifi à la semaine",
+      "prix" : "15€"
+    }
+  ],
+  "Packs télé": [
+    {
+      "id": 1,
+      "prestation": "Pack Canal+",
+      "prix-day" : "4€",
+      "prix-week": "15€"
+    },
+    {
+      "id": 2,
+      "prestation": "Pack OCS",
+      "prix-day" : "2€",
+      "prix-week": "8€"
+    },
+    {
+      "id": 2,
+      "prestation": "Netflix",
+      "prix-day" : "2€",
+      "prix-week": "8€"
+    }
+  ]
+}]

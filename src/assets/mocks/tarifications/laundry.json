@@ -1,0 +1,25 @@
+[{
+  "id": 1,
+  "piece": "Robe",
+  "prix" : "7€"
+},{
+  "id": 2,
+  "piece": "Chemise",
+  "prix" : "6€"
+},{
+  "id": 3,
+  "piece": "T-shirt",
+  "prix" : "4€"
+},{
+  "id": 4,
+  "piece": "Pantalon",
+  "prix" : "5€"
+},{
+  "id": 5,
+  "piece": "veste de costume",
+  "prix" : "6€"
+},{
+  "id": 6,
+  "piece": "cravate",
+  "prix" : "3€"
+}]
