@@ -19,22 +19,26 @@ export class TarificationComponent implements OnInit {
     private tarificationService: TarificationService) { }
 
   ngOnInit() {
-    this.getTarifRoomService()
+    this.getTarifRoomService();
+    this.getTarifMiniBar();
+    this.getTarifMultimedia();
+    this.getTarifLaundry();
   }
 
   getTarifRoomService(){
     this.tarificationService.getTarificationRoomService().subscribe((data) => this.tarifRoomService = data);
   }
 
-  getTarifMiniMBar(){
+  getTarifMiniBar(){
+    this.tarificationService.getTarificationMiniBar().subscribe((data) => this.tarifMiniBar = data);
   }
 
   getTarifMultimedia(){
-
+    this.tarificationService.getTarificationMultimedia().subscribe((data) => this.tarifMultimedia = data);
   }
 
   getTarifLaundry(){
-
+    this.tarificationService.getTarificationLaundry().subscribe((data) => this.tarifLaundry = data);
   }
 
 }

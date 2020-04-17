@@ -11,24 +11,24 @@
       "prix" : "15€"
     }
   ],
-  "Packs télé": [
+  "pack_tv": [
     {
       "id": 1,
       "prestation": "Pack Canal+",
-      "prix-day" : "4€",
-      "prix-week": "15€"
+      "prix_day" : "4€",
+      "prix_week": "15€"
     },
     {
       "id": 2,
       "prestation": "Pack OCS",
-      "prix-day" : "2€",
-      "prix-week": "8€"
+      "prix_day" : "2€",
+      "prix_week": "8€"
     },
     {
       "id": 2,
       "prestation": "Netflix",
-      "prix-day" : "2€",
-      "prix-week": "8€"
+      "prix_day" : "2€",
+      "prix_week": "8€"
     }
   ]
 }]
