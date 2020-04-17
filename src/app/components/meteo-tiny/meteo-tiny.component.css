@@ -1,15 +1,17 @@
 #tiny {
-    display: flex;
-
+  display: flex;
 }
 
 #tiny #hours {
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 7em;
+  margin-top: 20px;
 }
 
 #tiny img {
-    width: 8em;
+  margin-left: 2em;
+  margin-top: 3em;
+  width: 8em;
+  height: 8em;
 }
