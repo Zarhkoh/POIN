@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.7.
 
+## Prerequisite
+
+- Download nodejs
+- Download Angular with command `npm install -g @angular/cli `
+
+## Steps
+
+- Download the project with the command: `git clone https://github.com/Zarhkoh/POIN.git5`
+- Download the differents modules of the project with the command `npm install`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
