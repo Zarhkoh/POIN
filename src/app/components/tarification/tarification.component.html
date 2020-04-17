@@ -1,5 +1,5 @@
 <div id="wrapper">
-  <section *ngIf="router.url === '/tarification/room-service'" class="item-1">
+  <section *ngIf="router.url === '/tarification/room-service'" class="item-1 item-same">
     <h1>Room-Service</h1>
   </section>
 
@@ -41,7 +41,7 @@
   </div>
   </div>
 
-  <section *ngIf="router.url === '/tarification/mini-bar'" class="item-2">
+  <section *ngIf="router.url === '/tarification/mini-bar'" class="item-2 item-same">
     <h1>Mini-bar</h1>
   </section>
   <div *ngIf="router.url === '/tarification/mini-bar'" id="dinner" class="drop-dwn">
@@ -66,7 +66,7 @@
   </div>
 
 
-  <section *ngIf="router.url === '/tarification/multimedia'" class="item-3">
+  <section *ngIf="router.url === '/tarification/multimedia'" class="item-3 item-same">
     <h1>Multimedia</h1>
   </section>
   <div *ngIf="router.url === '/tarification/multimedia'" id="desserts" class="drop-dwn">
@@ -100,7 +100,7 @@
     </div>
   </div>
 
-  <section *ngIf="router.url === '/tarification/laundry'" class="item-4">
+  <section *ngIf="router.url === '/tarification/laundry'" class="item-4 item-same">
     <h1>Laundry</h1>
   </section>
   <div *ngIf="router.url === '/tarification/laundry'" id="drinks" class="drop-dwn">
