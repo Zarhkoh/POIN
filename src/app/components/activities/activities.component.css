@@ -6,9 +6,21 @@
   margin-bottom: 8em;
 }
 
-.pictures{
-  width:100%;
-  height:100%;
+.imgHeader{
+  margin:-1px;
 }
-activityCard{
+
+.card{
+  color: black;
+}
+.cardBody{
+  height:12em;
+}
+
+.imgHeader{
+  height:10em;
+}
+
+.activityCard{
+  margin-top: 5em;
 }

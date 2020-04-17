@@ -1,5 +1,9 @@
 #ad {
-  width: 85%;
-  height: 10em;
+  max-width: 90%;
+  max-height: 13em;
   background-color: rgb(57, 129, 223);
+}
+
+img{
+  max-height: 14em;
 }
