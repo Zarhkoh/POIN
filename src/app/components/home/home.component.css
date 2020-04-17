@@ -2,9 +2,3 @@
     display: flex;
     justify-content: center;
 }
-
-#hand-wave {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 30%;
-}
