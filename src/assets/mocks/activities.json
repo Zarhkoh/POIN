@@ -21,11 +21,11 @@
   }, {
     "id": 5,
     "title": "Salle de sport",
-    "description": "Au coeur de l'Espace bien-être de 150m², la salle de fitness est réservée aux clients de l'Hôtel Barrière Lille. Profites d'équipements de dernière génération et dépensez-vous à votre rythme sur des appareils Technogym®",
+    "description": "Au coeur de l'Espace bien-être de 150m², la salle de fitness est réservée aux clients de l'Hôtel Barrière Lille. Profitez d'équipements de dernière génération et dépensez-vous à votre rythme sur des appareils Technogym®",
     "picture": "/assets/images/activities/sport.png"
   }, {
     "id": 6,
     "title": "Terrasse du Parc",
-    "description": "Grande tablée, alcôve intime ou terrasse chauffée. Petits plats, salades et spécialités régionales. Aut rez-de-chaussée du Casino Barrière Lille, la Terrasse du Parc perpétue la convivialité du Nord et propose un brunch chaque dimanche.",
+    "description": "Grande tablée, alcôve intime ou terrasse chauffée. Petits plats, salades et spécialités régionales. Au rez-de-chaussée du Casino Barrière Lille, la Terrasse du Parc perpétue la convivialité du Nord et propose un brunch chaque dimanche.",
     "picture": "/assets/images/activities/terrasse_du_parc.png"
   }]
