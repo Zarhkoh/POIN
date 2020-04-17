@@ -1,0 +1,28 @@
+iframe {
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -48px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
+}
+
+#position-meteo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+app-meteo-tiny {
+  background-color: rgba(0, 0, 0, 0.11);
+  position: absolute;
+  bottom: 6em;
+  z-index: 2;
+  border-radius: 0.6em;
+}
