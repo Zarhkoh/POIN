@@ -1,0 +1,204 @@
+/*
+==================================================
+Base Styles
+==================================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: 1em;
+  letter-spacing: 0px;
+  line-height: 1.5em;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  border-bottom: 2px dotted #303030;
+}
+
+/*
+==================================================
+Grid Layout
+==================================================
+*/
+
+.row {
+  display: flex;
+  margin: 0 0 20px 0;
+}
+
+.col {
+  padding: 20px;
+}
+
+.row .col {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.row-halves,
+.row-thirds,
+.row-fourths {
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.row-halves .col {
+  width: 49%;
+}
+
+.row-thirds .col {
+  width: 32%;
+}
+
+.row-fourths .col {
+  width: 24%;
+}
+
+
+/*
+==================================================
+Main
+==================================================
+*/
+
+.drop-dwn {
+  margin: 50px;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  font-family: "Special Elite", cursive;
+}
+
+h1 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  width: 300px;
+  margin: 0 auto;
+  padding: 30px 20px 20px 20px;
+  font-size: 3em;
+  /* text-shadow: 0px 4px 4px  rgba(0, 0, 0, .5); */
+  vertical-align: text-bottom;
+  transition: all 0.3s;
+}
+
+.item-1 h1, .item-2 h1, .item-3 h1, .item-4 h1{
+  color: #424242;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+
+#lunch,
+#dinner,
+#desserts,
+#drinks {
+  padding: 0px;
+  /* display: none; */
+}
+
+/*.item-1,*/
+/*.item-2,*/
+/*.item-3,*/
+/*.item-4 {*/
+/*  -webkit-filter: grayscale(50%);*/
+/*  filter: grayscale(50%) brightness(90%) contrast(150%);*/
+/*}*/
+
+section {
+  height: 400px;
+  margin: 0;
+  padding-top: 150px;
+  text-align: center;
+}
+
+section:hover {
+  cursor: pointer;
+}
+
+.item-1 {
+  background: url("https://dq5r178u4t83b.cloudfront.net/wp-content/uploads/sites/25/2019/08/21093358/Cour-Corbeau_Avril-19_Jpeg-S_056-1500x690.jpg")no-repeat bottom;
+  background-size: cover;
+}
+
+.item-2 {
+  background: url("https://www.firmdalehotels.com/media/1201473/191202_fd_at_26_wsteamlores.jpg?a=1&crop=0.036785640983206393%2C0%2C0.050702334627177714%2C0.068288344296321676&cropmode=percentage&width=1596&height=1088&bgcolor=fff&sig=455e724d9a7ecc6f063498990e2572df")no-repeat bottom;
+  background-size: cover;
+}
+
+.item-3 {
+  background: url("https://www.shredit.com/getmedia/f3ff824f-4995-4cea-bc3e-c5d13e4acc85/Hotel-Guest-Feb-13.aspx")no-repeat bottom;
+  background-size: cover;
+}
+
+.item-4 {
+  background: url("https://www.hydrofinity.com/hubfs/Images%20-%20Blog/Hydrofinity/Blog_Images/hf-blog-in-house-laundry-benefits.png")no-repeat bottom;
+  background-size: cover;
+}
+
+/*
+==================================================
+Media Queries
+==================================================
+*/
+
+@media (max-width: 768px) {
+
+  section {
+    height: 300px;
+    margin: 0;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .row,
+  .row-halves,
+  .row-thirds,
+  .row-fourths {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .row .col,
+  .row-halves .col,
+  .row-thirds .col,
+  .row-fourths .col {
+    width: 100%;
+    margin: 0 0 0px 0;
+  }
+}
+
