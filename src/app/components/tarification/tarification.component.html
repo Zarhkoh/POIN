@@ -11,9 +11,9 @@
     </div>
 
     <div class="row-halves">
-      <div class="col">
+      <div *ngFor="let tarif of tarifRoomService.plateau_tv" class="col">
         <h2>Plateau TV</h2>
-        <h3>Saumon fumé, foie gras, aubergines</h3>
+        <h3>{{ tarif.titleFR }}</h3>
         <p>Cœur de saumon fumé par nos soins,
           tomates confites, pépites de foie gras de canard au sésame,
           caviar d’aubergines et ses toasts dorés</p>

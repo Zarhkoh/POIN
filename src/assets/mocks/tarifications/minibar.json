@@ -1,0 +1,36 @@
+[{
+  "boissons": [
+    {
+      "id": 1,
+      "title": "Vittel 50cl",
+      "prix" : "5€"
+    },
+    {
+      "id": 2,
+      "title": "San Pellegrino 50cl",
+      "prix" : "5€"
+    },
+    {
+      "id": 3,
+      "title": "Jus d'orange 20cl",
+      "prix" : "5€"
+    }
+  ],
+  "snack": [
+    {
+      "id": 1,
+      "title": "Petits gateaux",
+      "prix" : "4€"
+    },
+    {
+      "id": 2,
+      "title": "Chips",
+      "prix" : "3€"
+    },
+    {
+      "id": 2,
+      "title": "Cacahuètes",
+      "prix" : "3€"
+    }
+  ]
+}]
