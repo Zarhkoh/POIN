@@ -1,9 +1,3 @@
-/*
-==================================================
-Base Styles
-==================================================
-*/
-
 *,
 *:before,
 *:after {
@@ -116,11 +110,25 @@ h1 {
   transition: all 0.3s;
 }
 
-.item-1 h1, .item-2 h1, .item-3 h1, .item-4 h1{
+.item-1 h1 {
   color: #424242;
   background: rgba(255, 255, 255, 0.8);
 }
 
+.item-2 h1 {
+  color: #fff;
+  background: rgba(255, 87, 34, 0.9);
+}
+
+.item-3 h1 {
+  color: #3f51b5;
+  background: rgba(205, 233, 206, 0.9);
+}
+
+.item-4 h1 {
+  color: #e6ee9c;
+  background: rgba(244, 67, 54, 0.9);
+}
 
 #lunch,
 #dinner,
@@ -130,13 +138,13 @@ h1 {
   /* display: none; */
 }
 
-/*.item-1,*/
-/*.item-2,*/
-/*.item-3,*/
-/*.item-4 {*/
-/*  -webkit-filter: grayscale(50%);*/
-/*  filter: grayscale(50%) brightness(90%) contrast(150%);*/
-/*}*/
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%) brightness(90%) contrast(150%);
+}
 
 section {
   height: 400px;
@@ -150,22 +158,22 @@ section:hover {
 }
 
 .item-1 {
-  background: url("https://dq5r178u4t83b.cloudfront.net/wp-content/uploads/sites/25/2019/08/21093358/Cour-Corbeau_Avril-19_Jpeg-S_056-1500x690.jpg")no-repeat bottom;
+  background: url("https://images.unsplash.com/photo-1484344597163-9347ad5cb26d?ixlib=rb-0.3.5&s=1d7e5aa6441ba88e472a3d1ae4fda6be&auto=format&fit=crop&w=1918&q=80")no-repeat bottom;
   background-size: cover;
 }
 
 .item-2 {
-  background: url("https://www.firmdalehotels.com/media/1201473/191202_fd_at_26_wsteamlores.jpg?a=1&crop=0.036785640983206393%2C0%2C0.050702334627177714%2C0.068288344296321676&cropmode=percentage&width=1596&height=1088&bgcolor=fff&sig=455e724d9a7ecc6f063498990e2572df")no-repeat bottom;
+  background: url("https://images.unsplash.com/photo-1485677959733-60c357f80d3e?ixlib=rb-0.3.5&s=4ce91b5c7f595b03e312ff4950ed0a07&auto=format&fit=crop&w=1951&q=80")no-repeat bottom;
   background-size: cover;
 }
 
 .item-3 {
-  background: url("https://www.shredit.com/getmedia/f3ff824f-4995-4cea-bc3e-c5d13e4acc85/Hotel-Guest-Feb-13.aspx")no-repeat bottom;
+  background: url("https://images.unsplash.com/photo-1469533667357-006056eaf780?ixlib=rb-0.3.5&s=37b9a3259037f2cd807d6d07f72ac928&auto=format&fit=crop&w=1950&q=80")no-repeat bottom;
   background-size: cover;
 }
 
 .item-4 {
-  background: url("https://www.hydrofinity.com/hubfs/Images%20-%20Blog/Hydrofinity/Blog_Images/hf-blog-in-house-laundry-benefits.png")no-repeat bottom;
+  background: url("https://images.unsplash.com/photo-1517159906085-dd4f2277d4d0?ixlib=rb-0.3.5&s=f090d350ae3e8411c56a693192a1314d&auto=format&fit=crop&w=1950&q=80")no-repeat bottom;
   background-size: cover;
 }
 
@@ -201,7 +209,6 @@ Media Queries
     margin: 0 0 0px 0;
   }
 }
-
 #meteo-tiny {
   display: flex;
   justify-content: center;
