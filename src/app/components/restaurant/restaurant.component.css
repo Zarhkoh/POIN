@@ -1,3 +1,12 @@
+@keyframes direction {
+  0% {
+    transform:translateY(0px)
+  }
+
+  100% {
+    transform:translateY(15px) ;
+  }
+}
 *,
 *:before,
 *:after {
@@ -213,4 +222,9 @@ Media Queries
   display: flex;
   justify-content: center;
   margin: 2%;
+}
+
+.material-icons{
+ font-size : 100px !important;
+  animation: direction 1s linear alternate infinite;
 }

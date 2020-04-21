@@ -11,6 +11,7 @@ import { InfosScrollingComponent } from './components/infos-scrolling/infos-scro
 import { PlanComponent } from './components/plan/plan.component';
 import { TarificationComponent } from './components/tarification/tarification.component';
 import { RestaurantComponent } from './components/restaurant/restaurant.component';
+
 @NgModule({
   declarations: [
     AppComponent,
