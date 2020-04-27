@@ -1,13 +1,12 @@
 <div class="fixed-bottom">
     <div class="mx-auto" id="delimitation"></div>
-    <div class="scrolling-infos d-flex flex-row mt-3 mb-2 justify-content-between">
-        <div id="gradientStart">invisible</div>
-        <div class="infos d-flex position-absolute">
-            <p>Le spa ouvrira ses portes dans 15 minutes.</p>
-            <p>Le petit déjeuner est servi jusqu'à 10:30</p>
-            <p>Le numéro de l'accueil est le 80085</p>
-            <p>-10 % sur l'addition au restaurant de l'hôtel ce soir</p>
-            <p>Happy hour au bar de 18h à 20h</p>
+    <div  class="scrolling-infos d-flex flex-row mt-3 mb-2 justify-content-between">
+        <div id="gradientStart"></div>
+        <div  class="infos d-flex position-absolute">
+            <div *ngFor="let information of informations">
+                <p><b>{{information.message}}</b></p>
+            </div>
+            
         </div>
         <div id="gradientEnd">invisible</div>
     </div>

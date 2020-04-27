@@ -170,6 +170,12 @@ section:hover {
   background-size: cover;
 }
 
+#meteo-tiny {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+
 /*
 ==================================================
 Media Queries
@@ -201,10 +207,4 @@ Media Queries
     width: 100%;
     margin: 0 0 0px 0;
   }
-}
-
-#meteo-tiny {
-  display: flex;
-  justify-content: center;
-  margin: 2%;
 }

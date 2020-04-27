@@ -8,9 +8,13 @@ import { HomeComponent } from './components/home/home.component';
 import { MeteoTinyComponent } from './components/meteo-tiny/meteo-tiny.component';
 import { GestureComponent } from './components/gesture/gesture.component';
 import { InfosScrollingComponent } from './components/infos-scrolling/infos-scrolling.component';
+
 import { PlanComponent } from './components/plan/plan.component';
 import { TarificationComponent } from './components/tarification/tarification.component';
 import { RestaurantComponent } from './components/restaurant/restaurant.component';
+import { ActivitiesComponent } from './components/activities/activities.component';
+import { HotelAdsComponent } from './components/hotel-ads/hotel-ads.component';
+
 
 @NgModule({
   declarations: [
@@ -22,6 +26,8 @@ import { RestaurantComponent } from './components/restaurant/restaurant.componen
     PlanComponent,
     TarificationComponent,
     RestaurantComponent
+    ActivitiesComponent,
+    HotelAdsComponent
   ],
   imports: [
     BrowserModule,

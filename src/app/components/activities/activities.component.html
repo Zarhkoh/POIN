@@ -1,0 +1,22 @@
+<div id="meteo">
+  <app-meteo-tiny></app-meteo-tiny>
+</div>
+<div id="content">
+  <div class="container">
+  <div class="row justify-content-center">
+    <div *ngFor="let activity of activities" class="activityCard col-4">
+      <div class="card mt-5">
+        <img class="imgHeader" src="{{activity.picture}}">
+          <div class="container">
+            <h4 class="card-title mt-1">{{activity.title}}</h4>
+            <p class="cardBody">{{activity.description}}</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  <div id="ad" class="fixed-bottom">
+    <app-hotel-ads></app-hotel-ads>
+  </div>
+</div>
+<app-infos-scrolling></app-infos-scrolling>
