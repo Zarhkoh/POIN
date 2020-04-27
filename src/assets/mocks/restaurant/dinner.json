@@ -1,0 +1,39 @@
+[{
+  "steaks": [
+    {
+      "id": 1,
+      "titleFR": "Faux-filet",
+      "titleEN": "Ribeye",
+      "descriptionFR": "Bien persillé, juteux et savoureux. Au feu de bois grillé avec la saveur naturelle du chêne.",
+      "descriptionEN": "Well-marbled, juicy and savory. Wood-fire grilled with the natural flavor of oak.",
+      "prix" : "29€"
+    },
+    {
+      "id": 1,
+      "titleFR": "Steak de faux-filet avec os",
+      "titleEN": "Bone-In Ribeye Steak",
+      "descriptionFR": "500gr, style steakhouse, juteux et savoureux. Au feu de bois grillé avec la saveur naturelle du chêne.",
+      "descriptionEN": "18 oz, steakhouse style, juicy and savory. Wood-fire grilled with the natural flavor of oak.",
+      "prix" : "33€"
+    }
+  ],
+  "burgers": [
+    {
+      "id": 1,
+      "titleFR": "Grand burger",
+      "titleEN": "Big burger",
+      "descriptionFR": "Massif 300gr. galette de boeuf au fromage américain fait maison, bacon frit au babeurre, mayonnaise au raifort, laitue, tomate et cornichon",
+      "descriptionEN": "Massive 10 oz. beef patty with housemade American cheese, buttermilk fried bacon, horseradish mayo, lettuce, tomato and pickle",
+      "prix" : ""
+    },
+    {
+      "id": 1,
+      "titleFR": "Burger monstre",
+      "titleEN": "Beast burger",
+      "descriptionFR": "Fromage américain fait maison, frites à la corde, ketchup à l'ail épicé, laitue frisée, tomate et oignon rouge",
+      "descriptionEN": "Housemade American cheese, shoestring fries, spicy garlic ketchup, leaf lettuce, tomato and red onion",
+      "prix" : ""
+    }
+  ]
+}]
+

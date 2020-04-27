@@ -4,7 +4,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { PlanComponent } from './components/plan/plan.component';
 import { HomeComponent } from './components/home/home.component';
 import { TarificationComponent } from "./components/tarification/tarification.component";
+import {RestaurantComponent} from "./components/restaurant/restaurant.component";
 import { ActivitiesComponent } from './components/activities/activities.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,7 +15,11 @@ const routes: Routes = [
   { path: 'tarification/room-service', component: TarificationComponent},
   { path: 'tarification/multimedia', component: TarificationComponent},
   { path: 'tarification/mini-bar', component: TarificationComponent},
-  { path: 'tarification/laundry', component: TarificationComponent}
+  { path: 'tarification/laundry', component: TarificationComponent},
+  { path: 'restaurant/lunch', component: RestaurantComponent},
+  { path: 'restaurant/dinner', component: RestaurantComponent},
+  { path: 'restaurant/dessert', component: RestaurantComponent},
+  { path: 'restaurant/drink', component: RestaurantComponent}
 ];
 
 @NgModule({

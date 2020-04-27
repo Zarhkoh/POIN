@@ -1,0 +1,41 @@
+[{
+  "sandwiches": [
+    {
+      "id": 1,
+      "titleFR": "Italien",
+      "titleEN": "Italian",
+      "descriptionFR": "Salami, capicola, jambon, mortadelle, mozzarella, tomate Roma, assaisonnement italien et vinaigrette italienne",
+      "descriptionEN": "Salami, capicola, ham, mortadella, mozzarella, Roma tomato, Italian seasoning & Italian dressing",
+      "prix" : "22€"
+    },
+    {
+      "id": 1,
+      "titleFR": "Poulet chipotle",
+      "titleEN": "Chipotle Chicken",
+      "descriptionFR": "Poulet grillé, bacon, cheddar, avocat, laitue et sauce chipotle",
+      "descriptionEN": "Grilled chicken, bacon, cheddar, avocado, lettuce & chipotle sauce",
+      "prix" : "19€"
+    }
+  ],
+  "wraps": [
+    {
+      "id": 1,
+      "titleFR": "Chicken Caesar Wrap",
+      "titleEN": "Wrap poulet ceasar",
+      "descriptionFR": "Poulet grillé, parmesan rapé, romaine, croûtons maison et vinaigrette César",
+      "descriptionEN": "Grilled chicken, shaved Parmesan, romaine, housemade croutons & Caesar dressing",
+      "prix" : "19€"
+    },
+    {
+      "id": 1,
+      "titleFR": "Wrap au thon épicé",
+      "titleEN": "Spicy Tuna Wrap",
+      "descriptionFR": "Salade de thon germon, romaine, tomate Roma, olives Kalamata, piments banane, sauce chipotle & vinaigrette balsamique",
+      "descriptionEN": "Albacore tuna salad, romaine, Roma tomato, Kalamata olives, banana peppers, chipotle sauce & balsamic vinaigrette",
+      "prix" : "22€"
+    }
+  ]
+}]
+
+
+

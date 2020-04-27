@@ -1,0 +1,36 @@
+[{
+  "bieres": [
+    {
+      "id": 1,
+      "title": "Leffe blonde",
+      "prix" : "25cl - 5€ / 50cl - 9€"
+    },
+    {
+      "id": 2,
+      "title": "Rince cochon",
+      "prix" : "25cl - 5€ / 50cl - 9€"
+    },
+    {
+      "id": 3,
+      "title": "Mort subite",
+      "prix" : "25cl - 5€ / 50cl - 9€"
+    }
+  ],
+  "soft": [
+    {
+      "id": 1,
+      "title": "Jus de fruit (plusieur parfums) 20cl",
+      "prix" : "4€"
+    },
+    {
+      "id": 2,
+      "title": "Coca 33cl",
+      "prix" : "3€"
+    },
+    {
+      "id": 3,
+      "title": "Fanta 33cl",
+      "prix" : "3€"
+    }
+  ]
+}]
