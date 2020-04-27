@@ -25,7 +25,7 @@ import { HotelAdsComponent } from './components/hotel-ads/hotel-ads.component';
     InfosScrollingComponent,
     PlanComponent,
     TarificationComponent,
-    RestaurantComponent
+    RestaurantComponent,
     ActivitiesComponent,
     HotelAdsComponent
   ],
