@@ -6,7 +6,7 @@
   <title>POIN</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"> </script>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -26,8 +26,12 @@
 
   <canvas id="canvas" class="border canvasbox"></canvas>
 
+  <div id="mydiv" style="position:absolute; height: 100px; width: 100px; background-color: red;"></div>
+
 
   <script>
+    var myDiv = document.getElementById('mydiv');
+
     // Notice there is no 'import' statement. 'handTrack' and 'tf' is
     // available on the index-page because of the script tag above.
     const video = document.getElementById("myvideo");
@@ -72,11 +76,17 @@
 
     function runDetection() {
       model.detect(video).then(predictions => {
-        console.log("Predictions: ", predictions);
+        if (predictions[0] != undefined) {
+          console.log("Predictions: ", predictions[0].bbox[0]);
+          myDiv.style.position = "absolute";
+          myDiv.style.left = (predictions[0].bbox[0] * 3) + 'px';
+          myDiv.style.top = (predictions[0].bbox[1] * 6)+ 'px';
+        }
         model.renderPredictions(predictions, canvas, context, video);
         if (isVideo) {
           requestAnimationFrame(runDetection);
         }
+
       });
     }
 
