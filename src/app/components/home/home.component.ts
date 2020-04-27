@@ -8,6 +8,7 @@ import * as handTrack from 'handtrackjs';
 })
 export class HomeComponent implements OnInit {
 
+  URL = "http://localhost:4200/restaurant/lunch"
   // @ViewChild('myCanvas', {static: false}) myCanvas: ElementRef;
   // public context: CanvasRenderingContext2D;
   // img = document.getElementById('img');

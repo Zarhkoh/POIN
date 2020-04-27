@@ -81,6 +81,11 @@
           myDiv.style.position = "absolute";
           myDiv.style.left = (predictions[0].bbox[0] * 3) + 'px';
           myDiv.style.top = (predictions[0].bbox[1] * 6)+ 'px';
+
+          if (predictions[0].bbox[0] >= 350) {
+            window.location.replace(document.getElementById("test").innerHTML);
+            console.log(document.getElementById("test").innerHTML);
+          }
         }
         model.renderPredictions(predictions, canvas, context, video);
         if (isVideo) {
