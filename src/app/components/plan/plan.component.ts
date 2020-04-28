@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class PlanComponent implements OnInit {
 
   baseURL = "http://localhost:4200/"
-  topURL = this.baseURL + "activities/";
-  bottomURL = this.baseURL + "activities/";
-  leftURL = this.baseURL + "activities/";
-  rightURL = this.baseURL + "plan/";
+  topURL = this.baseURL + "activities";
+  bottomURL = this.baseURL + "activities";
+  leftURL = this.baseURL + "activities";
+  rightURL = this.baseURL + "plan";
   
   constructor() { }
 

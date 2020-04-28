@@ -24,6 +24,7 @@ export class RestaurantComponent implements OnInit {
     private restaurantService: RestaurantService) { }
 
   ngOnInit() {
+    this.manageURL();
     this.getCardLunch();
     this.getCardDinner();
     this.getCardDessert();
@@ -47,32 +48,32 @@ export class RestaurantComponent implements OnInit {
   }
 
   manageURL() {
-    if(this.router.url === this.baseURL + "restaurant/lunch/") {
-        this.bottomURL = this.baseURL + "restaurant/dinner/";
+    if(this.router.url === "/restaurant/lunch") {
+        this.bottomURL = this.baseURL + "restaurant/dinner";
         this.topURL = this.baseURL;
-        this.leftURL = this.baseURL + "tarification/room-service/";
-        this.rightURL = this.baseURL;
+        this.leftURL = this.baseURL + "tarification/room-service";
+        this.rightURL = this.baseURL + "/restaurant/lunch";
     }
 
-    if(this.router.url === this.baseURL + "restaurant/dinner/") {
-      this.bottomURL = this.baseURL + "restaurant/dessert/";
-      this.topURL = this.baseURL + "restaurant/lunch/";
-      this.leftURL = this.baseURL + "restaurant/lunch/";
-      this.rightURL = this.baseURL + "restaurant/dinner/";
+    if(this.router.url === "/restaurant/dinner") {
+      this.bottomURL = this.baseURL + "restaurant/dessert";
+      this.topURL = this.baseURL + "restaurant/lunch";
+      this.leftURL = this.baseURL + "restaurant/lunch";
+      this.rightURL = this.baseURL + "restaurant/dinner";
     }
 
-    if(this.router.url === this.baseURL + "restaurant/dessert/") {
-      this.bottomURL = this.baseURL + "restaurant/drink/";
-      this.topURL = this.baseURL + "restaurant/dinner/";
-      this.leftURL = this.baseURL + "restaurant/lunch/";
-      this.rightURL = this.baseURL + "restaurant/dessert/";
+    if(this.router.url === "/restaurant/dessert") {
+      this.bottomURL = this.baseURL + "restaurant/drink";
+      this.topURL = this.baseURL + "restaurant/dinner";
+      this.leftURL = this.baseURL + "restaurant/lunch";
+      this.rightURL = this.baseURL + "restaurant/dessert";
     }
 
-    if(this.router.url === this.baseURL + "restaurant/drink/") {
-      this.bottomURL = this.baseURL + "restaurant/lunch/";
-      this.topURL = this.baseURL + "restaurant/dessert/";
-      this.leftURL = this.baseURL + "restaurant/lunch/";
-      this.rightURL = this.baseURL + "restaurant/drink/";
+    if(this.router.url === "/restaurant/drink") {
+      this.bottomURL = this.baseURL + "restaurant/lunch";
+      this.topURL = this.baseURL + "restaurant/dessert";
+      this.leftURL = this.baseURL + "restaurant/lunch";
+      this.rightURL = this.baseURL + "restaurant/drink";
     }
   }
 }

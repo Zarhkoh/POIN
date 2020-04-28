@@ -2,25 +2,34 @@
   display: flex;
   justify-content: center;
 }
+
 #ad {
   margin-bottom: 8em;
 }
 
-.imgHeader{
-  margin:-1px;
+.imgHeader {
+  margin: -1px;
 }
 
-.card{
+.card {
   color: black;
 }
-.cardBody{
-  height:12em;
+
+.cardBody {
+  height: 12em;
 }
 
-.imgHeader{
-  height:10em;
+.imgHeader {
+  height: 10em;
 }
 
-.activityCard{
+.activityCard {
   margin-top: 5em;
+}
+
+#bottomURL,
+#topURL,
+#leftURL,
+#rightURL {
+  display: none;
 }
