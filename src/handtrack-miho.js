@@ -13,10 +13,6 @@ const modelParams = {
   scoreThreshold: 0.6, // confidence threshold for predictions.
 }
 
-function testconsole() {
-  console.log('lolo');
-}
-
 window.onload = function () {
   toggleVideo();
 };
@@ -43,15 +39,52 @@ function toggleVideo() {
 function runDetection() {
   model.detect(video).then(predictions => {
     if (predictions[0] != undefined) {
+      x = predictions[0].bbox[0];
+      y = predictions[0].bbox[1];
       console.log("Predictions: ", predictions[0].bbox[0]);
       myDiv.style.position = "absolute";
       myDiv.style.left = (predictions[0].bbox[0] * 3) + 'px';
       myDiv.style.top = (predictions[0].bbox[1] * 6) + 'px';
 
-      if (predictions[0].bbox[0] >= 350) {
-        window.location.replace(document.getElementById("test").innerHTML);
-        console.log(document.getElementById("test").innerHTML);
+      // Sy X est a droite & Y ni trop bas, ni trop haut, DROITE
+      if (x >= 350 && (y>=100 && y<=300)) {
+        if(window.location.href !=document.getElementById("rightURL").innerHTML){
+          console.log("SWIPE DROITE VERS: "+document.getElementById("rightURL").innerHTML);
+          window.location.replace(document.getElementById("rightURL").innerHTML);
+        }else{
+          console.log("SWIPE DROITE MAIS MÊME URL");
+        }
       }
+
+      // Sy X est a gauche & Y ni trop bas, ni trop haut, GAUCHE
+      else if (x <= 50 && (y>=100 && y<=300)) {
+        if(window.location.href !=document.getElementById("leftURL").innerHTML){
+          console.log("SWIPE GAUCHE VERS: "+document.getElementById("leftURL").innerHTML);
+          window.location.replace(document.getElementById("leftURL").innerHTML);
+        }
+        else{
+          console.log("SWIPE GAUCHE MAIS MÊME URL");
+        }
+      }
+      // Sy X est ni trop bas, ni trop haut & Y bas, BAS
+      else if ((x >= 50 && x<=350) && y<=50) {
+        if(window.location.href !=document.getElementById("bottomURL").innerHTML){
+          window.location.replace(document.getElementById("bottomURL").innerHTML);
+          console.log("SWIPE BAS VERS: "+document.getElementById("bottomURL").innerHTML);
+        }else{
+          console.log("SWIPE BAS MAIS MÊME URL");
+        }
+      }
+      // Sy X est ni trop bas, ni trop haut & Y haut, HAUT
+      else if ((x >= 50 && x<=350) && y>=300) {
+        if(window.location.href !=document.getElementById("topURL").innerHTML){
+          window.location.replace(document.getElementById("topURL").innerHTML);
+          console.log("SWIPE HAUT VERS: "+document.getElementById("topURL").innerHTML);
+        }else{
+          console.log("SWIPE HAUT MAIS MÊME URL");
+        }
+      }
+
     }
     model.renderPredictions(predictions, canvas, context, video);
     if (isVideo) {
