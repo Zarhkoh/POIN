@@ -7,7 +7,10 @@ import { ActivitiesService } from 'src/app/services/activities.service';
   styleUrls: ['./activities.component.css']
 })
 export class ActivitiesComponent implements OnInit {
-activities;
+
+  URL = "http://localhost:4200/";
+
+  activities;
   constructor(private activitiesService: ActivitiesService) { 
   }
 

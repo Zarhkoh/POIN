@@ -11,33 +11,21 @@
   <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"> </script>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <script src="./handtrack-miho.js"></script> -->
 </head>
 
 <body>
   <app-root></app-root>
 
-  <div class="mb10">
-    <button onclick="toggleVideo()" id="trackbutton" class="bx--btn bx--btn--secondary" type="button">
-      Toggle Video
-    </button>
-    <div id="updatenote" class="updatenote mt10"> loading model ..</div>
-  </div>
   <video class="videobox canvasbox" autoplay="autoplay" id="myvideo"></video>
-
   <canvas id="canvas" class="border canvasbox"></canvas>
-
   <div id="mydiv" style="position:absolute; height: 100px; width: 100px; background-color: red;"></div>
-
-
+  
   <script>
     var myDiv = document.getElementById('mydiv');
-
-    // Notice there is no 'import' statement. 'handTrack' and 'tf' is
-    // available on the index-page because of the script tag above.
     const video = document.getElementById("myvideo");
     const canvas = document.getElementById("canvas");
     const context = canvas.getContext("2d");
-    let trackButton = document.getElementById("trackbutton");
     let updateNote = document.getElementById("updatenote");
     let isVideo = false;
     let model = null;
@@ -49,28 +37,26 @@
       scoreThreshold: 0.6, // confidence threshold for predictions.
     }
 
+    window.onload = function () {
+      toggleVideo();
+    };
+
+
     function startVideo() {
       handTrack.startVideo(video).then(function (status) {
-        console.log("video started", status);
         if (status) {
-          updateNote.innerText = "Video started. Now tracking"
           isVideo = true
           runDetection()
-        } else {
-          updateNote.innerText = "Please enable video"
         }
       });
     }
 
     function toggleVideo() {
       if (!isVideo) {
-        updateNote.innerText = "Starting video"
         startVideo();
       } else {
-        updateNote.innerText = "Stopping video"
         handTrack.stopVideo(video)
         isVideo = false;
-        updateNote.innerText = "Video stopped"
       }
     }
 
@@ -80,7 +66,7 @@
           console.log("Predictions: ", predictions[0].bbox[0]);
           myDiv.style.position = "absolute";
           myDiv.style.left = (predictions[0].bbox[0] * 3) + 'px';
-          myDiv.style.top = (predictions[0].bbox[1] * 6)+ 'px';
+          myDiv.style.top = (predictions[0].bbox[1] * 6) + 'px';
 
           if (predictions[0].bbox[0] >= 350) {
             window.location.replace(document.getElementById("test").innerHTML);
@@ -97,14 +83,10 @@
 
     // Load the model.
     handTrack.load(modelParams).then(lmodel => {
-      // detect objects in the image.
       model = lmodel
-      updateNote.innerText = "Loaded Model!"
-      trackButton.disabled = false
     });
 
   </script>
-
 </body>
 
 </html>
