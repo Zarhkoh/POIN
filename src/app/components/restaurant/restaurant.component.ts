@@ -8,10 +8,17 @@ import { RestaurantService } from "../../services/restaurant.service";
   styleUrls: ['./restaurant.component.css']
 })
 export class RestaurantComponent implements OnInit {
+  baseURL = "http://localhost:4200";
+  topURL;
+  bottomURL;
+  leftURL;
+  rightURL;
+
   cardLunch;
   cardDinner;
   cardDessert;
   cardDrink;
+  
   constructor(
     private router: Router,
     private restaurantService: RestaurantService) { }
@@ -39,4 +46,33 @@ export class RestaurantComponent implements OnInit {
     this.restaurantService.getCardDrink().subscribe((data)=> this.cardDrink = data)
   }
 
+  manageURL() {
+    if(this.router.url === this.baseURL + "/restaurant/lunch") {
+        this.bottomURL = this.baseURL + "/restaurant/dinner";
+        this.topURL = this.baseURL;
+        this.leftURL = this.baseURL + "/tarification/room-service";
+        this.rightURL = this.baseURL;
+    }
+
+    if(this.router.url === this.baseURL + "/restaurant/dinner") {
+      this.bottomURL = this.baseURL + "/restaurant/dessert";
+      this.topURL = this.baseURL + "/restaurant/lunch";
+      this.leftURL = this.baseURL + "/restaurant/lunch";
+      this.rightURL = this.baseURL + "/restaurant/dinner";
+    }
+
+    if(this.router.url === this.baseURL + "/restaurant/dessert") {
+      this.bottomURL = this.baseURL + "/restaurant/drink";
+      this.topURL = this.baseURL + "/restaurant/dinner";
+      this.leftURL = this.baseURL + "/restaurant/lunch";
+      this.rightURL = this.baseURL + "/restaurant/dessert";
+    }
+
+    if(this.router.url === this.baseURL + "/restaurant/drink") {
+      this.bottomURL = this.baseURL + "/restaurant/lunch";
+      this.topURL = this.baseURL + "/restaurant/dessert";
+      this.leftURL = this.baseURL + "/restaurant/lunch";
+      this.rightURL = this.baseURL + "/restaurant/drink";
+    }
+  }
 }

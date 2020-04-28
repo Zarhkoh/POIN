@@ -7,6 +7,11 @@ import { ScrollingInformationsService } from 'src/app/services/scrolling-informa
   styleUrls: ['./infos-scrolling.component.css']
 })
 export class InfosScrollingComponent implements OnInit {
+
+  topURL = "http://localhost:4200/";
+  bottomURL = "http://localhost:4200/";
+  leftURL = "http://localhost:4200/";
+  rightURL = "http://localhost:4200/";
   informations;
 
   constructor(private scrollingInformationsService: ScrollingInformationsService) { }
