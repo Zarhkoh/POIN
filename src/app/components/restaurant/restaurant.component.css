@@ -192,16 +192,22 @@ Media Queries
     margin: 0 0 0px 0;
   }
 }
+
 #meteo-tiny {
   display: flex;
   justify-content: center;
   margin: 2%;
 }
 
-.material-icons{
- font-size : 100px !important;
+.material-icons {
+  font-size : 100px !important;
   animation: direction 1s linear alternate infinite;
 }
-#bottomURL,#topURL,#leftURL,#rightURL{
-display: none;
+
+#bottomURL,
+#topURL,
+#leftURL,
+#rightURL{
+  display: none;
 }
+
