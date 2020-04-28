@@ -49,6 +49,18 @@ body {
   display: inline;
 }
 
+video {
+  display: none;
+}
+
+.canvasbox {
+  width: 28%;
+  height: 12%;
+  opacity: 50%;
+  position: absolute;
+  z-index: 5;
+}
+
 /***************ARROWS****************/
 
 .material-icons-right-left{

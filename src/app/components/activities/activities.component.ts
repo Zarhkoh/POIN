@@ -8,11 +8,11 @@ import { ActivitiesService } from 'src/app/services/activities.service';
 })
 export class ActivitiesComponent implements OnInit {
   
-  baseURL = "http://localhost:4200";
+  baseURL = "http://localhost:4200/";
   topURL = this.baseURL;
-  bottomURL = this.baseURL + "/plan";
+  bottomURL = this.baseURL + "plan/";
   leftURL = this.baseURL;
-  rightURL = this.baseURL + "/tarification/room-service";
+  rightURL = this.baseURL + "tarification/room-service/";
 
   activities;
   constructor(private activitiesService: ActivitiesService) { 

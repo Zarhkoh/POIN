@@ -8,14 +8,9 @@ import { WeatherService } from '../../services/weather.service';
 })
 export class MeteoTinyComponent implements OnInit {
 
-  topURL = "http://localhost:4200/";
-  bottomURL = "http://localhost:4200/";
-  leftURL = "http://localhost:4200/";
-  rightURL = "http://localhost:4200/";
-
   // Variables Weather
   METEO;
-  city = 'Lille';
+  city = 'Lille, France';
   appid = 'ecffadd0f704673d5bfa3386bbe949f5';
 
   // Variables Date
