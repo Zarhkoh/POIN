@@ -41,13 +41,14 @@ function runDetection() {
     if (predictions[0] != undefined) {
       x = predictions[0].bbox[0];
       y = predictions[0].bbox[1];
-      console.log("Predictions: ", predictions[0].bbox[0]);
-      myDiv.style.position = "absolute";
-      myDiv.style.left = (predictions[0].bbox[0] * 3) + 'px';
-      myDiv.style.top = (predictions[0].bbox[1] * 6) + 'px';
+      console.log("URL BARRE: "+window.location.href)
+      //console.log("Predictions: ", predictions[0].bbox[0]);
+      // myDiv.style.position = "absolute";
+      // myDiv.style.left = (predictions[0].bbox[0] * 3) + 'px';
+      // myDiv.style.top = (predictions[0].bbox[1] * 6) + 'px';
 
       // Sy X est a droite & Y ni trop bas, ni trop haut, DROITE
-      if (x >= 350 && (y>=100 && y<=300)) {
+      if (x >= 370 && (y>=200 && y<=300)) {
         if(window.location.href !=document.getElementById("rightURL").innerHTML){
           console.log("SWIPE DROITE VERS: "+document.getElementById("rightURL").innerHTML);
           window.location.replace(document.getElementById("rightURL").innerHTML);
@@ -57,7 +58,7 @@ function runDetection() {
       }
 
       // Sy X est a gauche & Y ni trop bas, ni trop haut, GAUCHE
-      else if (x <= 50 && (y>=100 && y<=300)) {
+      else if (x <= 30 && (y>=200 && y<=300)) {
         if(window.location.href !=document.getElementById("leftURL").innerHTML){
           console.log("SWIPE GAUCHE VERS: "+document.getElementById("leftURL").innerHTML);
           window.location.replace(document.getElementById("leftURL").innerHTML);
@@ -67,7 +68,7 @@ function runDetection() {
         }
       }
       // Sy X est ni trop bas, ni trop haut & Y bas, BAS
-      else if ((x >= 50 && x<=350) && y<=50) {
+      else if ((x >= 30 && x<=380) && y>=410) {
         if(window.location.href !=document.getElementById("bottomURL").innerHTML){
           window.location.replace(document.getElementById("bottomURL").innerHTML);
           console.log("SWIPE BAS VERS: "+document.getElementById("bottomURL").innerHTML);
@@ -76,7 +77,7 @@ function runDetection() {
         }
       }
       // Sy X est ni trop bas, ni trop haut & Y haut, HAUT
-      else if ((x >= 50 && x<=350) && y>=300) {
+      else if ((x >= 30 && x<=380) && y<=10) {
         if(window.location.href !=document.getElementById("topURL").innerHTML){
           window.location.replace(document.getElementById("topURL").innerHTML);
           console.log("SWIPE HAUT VERS: "+document.getElementById("topURL").innerHTML);
