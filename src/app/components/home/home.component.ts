@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomeComponent implements OnInit {
 
-  baseURL = "http://localhost:4200";
-  rightURL = this.baseURL + "/activities";
+  baseURL = "http://localhost:4200/";
+  rightURL = this.baseURL + "activities/";
   topURL = this.baseURL;
   bottomURL = this.baseURL;
   leftURL = this.baseURL;
