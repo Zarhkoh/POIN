@@ -4,6 +4,7 @@
 }
 #ad {
   margin-bottom: 8em;
+  z-index: 100;
 }
 
 .imgHeader{
@@ -23,4 +24,8 @@
 
 .activityCard{
   margin-top: 5em;
+}
+
+#content{
+  z-index: 1;
 }

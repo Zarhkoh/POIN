@@ -26,3 +26,13 @@ app-meteo-tiny {
   z-index: 2;
   border-radius: 0.6em;
 }
+.arrows-plan{
+  z-index: 3;
+  position: relative;
+  color: black;
+}
+
+arrow-bottom{
+  position: absolute;
+  top: 80%;
+}

@@ -1,3 +1,23 @@
+@keyframes direction_right_left {
+  0% {
+    transform:translateX(0px)
+  }
+
+  100% {
+    transform:translateX(15px) ;
+  }
+}
+
+@keyframes direction_top_bottom {
+  0% {
+    transform:translateY(0px)
+  }
+
+  100% {
+    transform:translateY(15px) ;
+  }
+}
+
 body {
   background-color: black;
   color: rgb(224, 224, 224);
@@ -27,4 +47,28 @@ body {
   background: rgb(245, 147, 20);
   color: white;
   display: inline;
+}
+
+/***************ARROWS****************/
+
+.material-icons-right-left{
+  font-size : 50px !important;
+  animation: direction_right_left 1s linear alternate infinite;
+}
+
+.material-icons-top-bottom{
+  font-size : 50px !important;
+  animation: direction_top_bottom 1s linear alternate infinite;
+}
+.arrow-right{
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left:80%;
+}
+.arrow-left{
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left:1%;
 }
