@@ -187,13 +187,11 @@ Media Queries
 #meteo-tiny {
   display: flex;
   justify-content: center;
-  margin: 2%;
 }
 
 #bottomURL,
 #topURL,
 #leftURL,
-#rightURL{
+#rightURL {
   display: none;
 }
-

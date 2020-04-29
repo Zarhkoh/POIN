@@ -1,11 +1,10 @@
+<div id="meteo-tiny">
+  <app-meteo-tiny></app-meteo-tiny>
+</div>
 <div id="bottomURL">{{bottomURL}}</div>
 <div id="topURL">{{topURL}}</div>
 <div id="leftURL">{{leftURL}}</div>
 <div id="rightURL">{{rightURL}}</div>
-
-<div id="meteo-tiny">
-  <app-meteo-tiny></app-meteo-tiny>
-</div>
 
 <div id="wrapper">
   <section *ngIf="router.url === '/restaurant/lunch'" class="item-1">
@@ -23,7 +22,7 @@
     <div *ngFor="let plateGroup of cardLunch" class="row-halves">
       <div class="col">
         <h2>Sandwiches</h2><br>
-        <div *ngFor="let plate of plateGroup.sandwiches" >
+        <div *ngFor="let plate of plateGroup.sandwiches">
           <h3>{{ plate.titleFR}}</h3>
           <p>{{plate.descriptionFR}}</p>
           <h3>{{plate.titleEN}}</h3>
@@ -60,7 +59,7 @@
     <div *ngFor="let plateGroup of cardDinner" class="row-halves">
       <div class="col">
         <h2>Steaks</h2><br>
-        <div *ngFor="let plate of plateGroup.steaks" >
+        <div *ngFor="let plate of plateGroup.steaks">
           <h3>{{ plate.titleFR}}</h3>
           <p>{{plate.descriptionFR}}</p>
           <h3>{{plate.titleEN}}</h3>
@@ -97,7 +96,7 @@
     <div *ngFor="let plateGroup of cardDessert" class="row-halves">
       <div class="col">
         <h2>Classiques</h2><br>
-        <div *ngFor="let plate of plateGroup.classique" >
+        <div *ngFor="let plate of plateGroup.classique">
           <h3>{{ plate.titleFR}}</h3>
           <p>{{plate.descriptionFR}}</p>
           <h3>{{plate.titleEN}}</h3>
