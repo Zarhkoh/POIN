@@ -19,16 +19,16 @@
     <span *ngIf="router.url !== '/'" class="material-icons material-icons-right-left">
       keyboard_arrow_left
     </span>
-    <p class="text-center" *ngIf="router.url === '/activities'">Home</p>
-    <p class="text-center" *ngIf="router.url === '/plan'">Activités</p>
-    <p class="text-center" *ngIf="router.url === '/restaurant/dinner'">Lunch</p>
-    <p class="text-center" *ngIf="router.url === '/restaurant/dessert'">Lunch</p>
-    <p class="text-center" *ngIf="router.url === '/restaurant/drink'">Tarification</p>
-    <p class="text-center" *ngIf="router.url === '/restaurant/lunch'">Lunch</p>
-    <p class="text-center" *ngIf="router.url === '/tarification/room-service'">Activités</p>
-    <p class="text-center" *ngIf="router.url === '/tarification/mini-bar'">Room-service</p>
-    <p class="text-center" *ngIf="router.url === '/tarification/laundry'">Room-service</p>
-    <p class="text-center" *ngIf="router.url === '/tarification/multimedia'">Room-service</p>
+    <p *ngIf="router.url === '/activities'">Home</p>
+    <p *ngIf="router.url === '/plan'">Activités</p>
+    <p *ngIf="router.url === '/restaurant/dinner'">Lunch</p>
+    <p *ngIf="router.url === '/restaurant/dessert'">Lunch</p>
+    <p *ngIf="router.url === '/restaurant/drink'">Tarification</p>
+    <p *ngIf="router.url === '/restaurant/lunch'">Lunch</p>
+    <p *ngIf="router.url === '/tarification/room-service'">Activités</p>
+    <p *ngIf="router.url === '/tarification/mini-bar'">Room-service</p>
+    <p *ngIf="router.url === '/tarification/laundry'">Room-service</p>
+    <p *ngIf="router.url === '/tarification/multimedia'">Room-service</p>
   </div>
   <div class="arrow-right">
     <span *ngIf="router.url === '/' || router.url === '/activities' || router.url === '/restaurant/lunch' || router.url === '/tarification/room-service'" class="material-icons material-icons-right-left">

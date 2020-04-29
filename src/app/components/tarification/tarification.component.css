@@ -32,7 +32,7 @@ img {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.2em;
   letter-spacing: 0px;
   line-height: 1.5em;
   font-weight: 600;
@@ -47,7 +47,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.4em;
+  font-size: 1.em;
   letter-spacing: 1px;
   border-bottom: 2px dotted #303030;
 }
@@ -202,4 +202,8 @@ Media Queries
     width: 100%;
     margin: 0 0 0px 0;
   }
+}
+
+.centered {
+  text-align: center;
 }
