@@ -22,7 +22,7 @@ iframe {
 app-meteo-tiny {
   background-color: rgba(0, 0, 0, 0.11);
   position: absolute;
-  bottom: 6em;
+  bottom: 11em;
   z-index: 2;
   border-radius: 0.6em;
 }
