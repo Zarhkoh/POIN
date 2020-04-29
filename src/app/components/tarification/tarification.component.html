@@ -6,17 +6,6 @@
 <div id="meteo-tiny">
   <app-meteo-tiny></app-meteo-tiny>
 </div>
-<!-- 
-<div class="text-center m-5">
-  <span class="material-icons material-icons-top-bottom">
-    keyboard_arrow_up
-  </span>
-  <p *ngIf="router.url === '/tarification/room-service'">Home</p>
-  <p *ngIf="router.url === '/tarification/mini-bar'">Multimedia</p>
-  <p *ngIf="router.url === '/tarification/laundry'">Mini-bar</p>
-  <p *ngIf="router.url === '/tarification/multimedia'">Room-service</p>
-</div> -->
-
 
 <div id="wrapper">
   <section *ngIf="router.url === '/tarification/room-service'" class="item-1">
@@ -64,7 +53,7 @@
   <section *ngIf="router.url === '/tarification/mini-bar'" class="item-2">
     <h1>Mini-bar</h1>
   </section>
-  <div *ngIf="router.url === '/tarification/mini-bar'" id="dinner" class="drop-dwn">
+  <div *ngIf="router.url === '/tarification/mini-bar'" id="dinner" class="centered drop-dwn">
     <div class="row">
       <div class="col">
         <h2 class="title">Boissons et snacks</h2>
@@ -89,7 +78,7 @@
   <section *ngIf="router.url === '/tarification/multimedia'" class="item-3">
     <h1>Multimedia</h1>
   </section>
-  <div *ngIf="router.url === '/tarification/multimedia'" id="desserts" class="drop-dwn">
+  <div *ngIf="router.url === '/tarification/multimedia'" id="desserts" class="centered drop-dwn">
     <div class="row">
       <div class="col">
         <h2 class="title">WIFI et Pack TV</h2>
@@ -108,14 +97,14 @@
       </div>
       <h2 class="col">Pack TV</h2>
       <div class="row">
-        <p class="col-3">Prestations</p>
-        <p class="col-3">Prix/Jour</p>
-        <p class="col-3">Prix/Semaine</p>
+        <p class="col-4">Prestations</p>
+        <p class="col-4">Prix/Jour</p>
+        <p class="col-4">Prix/Semaine</p>
       </div>
       <div *ngFor="let tarif of type.pack_tv" class="row">
-        <p class="col-3">{{tarif.prestation}}</p>
-        <p class="col-3">{{tarif.prix_day}}</p>
-        <p class="col-3">{{tarif.prix_week}}</p>
+        <p class="col-4">{{tarif.prestation}}</p>
+        <p class="col-4">{{tarif.prix_day}}</p>
+        <p class="col-4">{{tarif.prix_week}}</p>
       </div>
     </div>
   </div>
@@ -123,7 +112,7 @@
   <section *ngIf="router.url === '/tarification/laundry'" class="item-4">
     <h1>Laundry</h1>
   </section>
-  <div *ngIf="router.url === '/tarification/laundry'" id="drinks" class="drop-dwn">
+  <div *ngIf="router.url === '/tarification/laundry'" id="drinks" class="drop-dwn centered">
     <div class="row">
       <div class="col">
         <h2 class="title">Blanchisserie</h2>
@@ -138,32 +127,4 @@
 
 </div>
 
-<!-- <div> -->
-  <!--  <app-gesture></app-gesture>-->
-  <!-- <div *ngIf="router.url === '/tarification/room-service'" class="col arrow-right">
-    <span class="material-icons material-icons-right-left">
-      keyboard_arrow_right
-    </span>
-    <p>Restaurant</p>
-  </div>
-  <div class="col arrow-left">
-    <span class="material-icons material-icons-right-left">
-      keyboard_arrow_left
-    </span>
-    <p *ngIf="router.url === '/tarification/room-service'">Activités</p>
-    <p *ngIf="router.url === '/tarification/mini-bar'">Lunch</p>
-    <p *ngIf="router.url === '/tarification/laundry'">Lunch</p>
-    <p *ngIf="router.url === '/tarification/multimedia'">Lunch</p>
-  </div>
-</div> -->
-
-<!-- <div class="text-center m-5">
-  <p *ngIf="router.url === '/tarification/room-service'">Multimedia</p>
-  <p *ngIf="router.url === '/tarification/mini-bar'">Laundry</p>
-  <p *ngIf="router.url === '/tarification/laundry'">Room-service</p>
-  <p *ngIf="router.url === '/tarification/multimedia'">Mini-bar</p>
-  <span class="material-icons material-icons-top-bottom">
-    keyboard_arrow_down
-  </span>
-</div> -->
 <app-infos-scrolling></app-infos-scrolling>

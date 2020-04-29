@@ -32,7 +32,7 @@ img {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.2em;
   letter-spacing: 0px;
   line-height: 1.5em;
   font-weight: 600;
@@ -47,7 +47,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.4em;
+  font-size: 1.em;
   letter-spacing: 1px;
   border-bottom: 2px dotted #303030;
 }
@@ -106,11 +106,6 @@ Main
   padding: 20px;
 }
 
-h1,
-h2 {
-  font-family: "Special Elite", cursive;
-}
-
 h1 {
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -123,7 +118,10 @@ h1 {
   transition: all 0.3s;
 }
 
-.item-1 h1, .item-2 h1, .item-3 h1, .item-4 h1{
+.item-1 h1,
+.item-2 h1,
+.item-3 h1,
+.item-4 h1 {
   width: 35%;
   color: #424242;
   background: rgba(255, 255, 255, 0.8);
@@ -171,7 +169,6 @@ section:hover {
 #meteo-tiny {
   display: flex;
   justify-content: center;
-  margin: 2%;
 }
 
 /*
@@ -205,4 +202,8 @@ Media Queries
     width: 100%;
     margin: 0 0 0px 0;
   }
+}
+
+.centered {
+  text-align: center;
 }
