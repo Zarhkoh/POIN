@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MeteoLargeComponent } from './meteo-large.component';
+import { HotelAdsComponent } from './hotel-ads.component';
 
-describe('MeteoLargeComponent', () => {
-  let component: MeteoLargeComponent;
-  let fixture: ComponentFixture<MeteoLargeComponent>;
+describe('HotelAdsComponent', () => {
+  let component: HotelAdsComponent;
+  let fixture: ComponentFixture<HotelAdsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MeteoLargeComponent ]
+      declarations: [ HotelAdsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MeteoLargeComponent);
+    fixture = TestBed.createComponent(HotelAdsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

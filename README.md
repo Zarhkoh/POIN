@@ -1,37 +1,26 @@
-# POIN
+# POIN Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.7.
+This project is a student project about a connected mirror. We made our best to show a prototype of what we think could be a really nice idea in a hotel room. 
+You can keep customers aware of hotel information easily withoutr any intervetion.
 
-## Prerequisite
 
-- Download nodejs
-- Download Angular with command `npm install -g @angular/cli `
+## How to start
 
-## Steps
+1. Install NodeJS & Angular CLI
+    - Download [NodeJS](https://nodejs.org/en/download/)
+    - Download Angular with terminal command `npm install -g @angular/cli `
 
-- Download the project with the command: `git clone https://github.com/Zarhkoh/POIN.git5`
-- Download the differents modules of the project with the command `npm install`
 
-## Development server
+2. Install Project
+    - Clone the project with this command: `git clone https://github.com/Zarhkoh/POIN.git`
+    - Open terminal in project folder
+    - Run `npm install` to download & setup required modules & dependencies
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+3. Run Project
+    - Run `ng serve`. 
+    - Navigate to `http://localhost:4200/`.
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
