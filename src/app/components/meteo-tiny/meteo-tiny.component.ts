@@ -10,7 +10,7 @@ export class MeteoTinyComponent implements OnInit {
 
   // Variables Weather
   METEO;
-  city = 'Lille';
+  city = 'Lille, France';
   appid = 'ecffadd0f704673d5bfa3386bbe949f5';
 
   // Variables Date

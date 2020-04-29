@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hotel-ads.component.css']
 })
 export class HotelAdsComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {

@@ -23,14 +23,6 @@
       "descriptionFR": "Brownie sans farine, sauce aux framboises, glace à la vanille, saupoudré de noix de macadamia",
       "descriptionEN": "Flourless brownie, raspberry sauce, vanilla ice cream, sprinkled with macadamia nuts",
       "prix" : "5€"
-    },
-    {
-      "id": 4,
-      "titleFR": "Tarte au citron vert",
-      "titleEN": "Key Lime Pie",
-      "descriptionFR": "Croûte de noix de pécan rôtie",
-      "descriptionEN": "Roasted pecan crust",
-      "prix" : "6€"
     }
   ],
   "milkshake": [
@@ -57,15 +49,6 @@
       "descriptionFR": "Un rêve à la menthe et au chocolat crémeux de notre crème glacée soyeuse",
       "descriptionEN": "A creamy chocolate mint dream of our silky smooth ice cream",
       "prix" : "5€"
-    },
-    {
-      "id": 4,
-      "titleFR": "",
-      "titleEN": "Strawberry",
-      "descriptionFR": "Un rêve crémeux à la fraise de notre crème glacée douce et soyeuse",
-      "descriptionEN": "A creamy strawberry dream of our silky smooth ice cream",
-      "prix" : "5€"
     }
   ]
 }]
-

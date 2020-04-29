@@ -1,16 +1,10 @@
 <div id="meteo-tiny">
   <app-meteo-tiny></app-meteo-tiny>
 </div>
-
-<div class="text-center m-5">
-  <span class="material-icons">
-    keyboard_arrow_up
-  </span>
-  <p *ngIf="router.url === '/restaurant/drink'">Dessert</p>
-  <p *ngIf="router.url === '/restaurant/lunch'">Drink</p>
-  <p *ngIf="router.url === '/restaurant/dinner'">Lunch</p>
-  <p *ngIf="router.url === '/restaurant/dessert'">Dinner</p>
-</div>
+<div id="bottomURL">{{bottomURL}}</div>
+<div id="topURL">{{topURL}}</div>
+<div id="leftURL">{{leftURL}}</div>
+<div id="rightURL">{{rightURL}}</div>
 
 <div id="wrapper">
   <section *ngIf="router.url === '/restaurant/lunch'" class="item-1">
@@ -28,11 +22,11 @@
     <div *ngFor="let plateGroup of cardLunch" class="row-halves">
       <div class="col">
         <h2>Sandwiches</h2><br>
-        <div *ngFor="let plate of plateGroup.sandwiches" >
+        <div *ngFor="let plate of plateGroup.sandwiches">
           <h3>{{ plate.titleFR}}</h3>
           <p>{{plate.descriptionFR}}</p>
-          <h3>{{plate.titleEN}}</h3>
-          <p>{{plate.descriptionEN}}</p>
+          <!-- <h3>{{plate.titleEN}}</h3> -->
+          <!-- <p>{{plate.descriptionEN}}</p> -->
           <h5>{{plate.prix}}</h5><br>
         </div>
       </div>
@@ -42,8 +36,8 @@
         <div *ngFor="let plate of plateGroup.wraps">
           <h3>{{ plate.titleFR}}</h3>
           <p>{{plate.descriptionFR}}</p>
-          <h3>{{plate.titleEN}}</h3>
-          <p>{{plate.descriptionEN}}</p>
+          <!-- <h3>{{plate.titleEN}}</h3> -->
+          <!-- <p>{{plate.descriptionEN}}</p> -->
           <h5>{{plate.prix}}</h5><br>
         </div>
       </div>
@@ -65,11 +59,11 @@
     <div *ngFor="let plateGroup of cardDinner" class="row-halves">
       <div class="col">
         <h2>Steaks</h2><br>
-        <div *ngFor="let plate of plateGroup.steaks" >
+        <div *ngFor="let plate of plateGroup.steaks">
           <h3>{{ plate.titleFR}}</h3>
           <p>{{plate.descriptionFR}}</p>
-          <h3>{{plate.titleEN}}</h3>
-          <p>{{plate.descriptionEN}}</p>
+          <!-- <h3>{{plate.titleEN}}</h3> -->
+          <!-- <p>{{plate.descriptionEN}}</p> -->
           <h5>{{plate.prix}}</h5><br>
         </div>
       </div>
@@ -79,8 +73,8 @@
         <div *ngFor="let plate of plateGroup.burgers">
           <h3>{{ plate.titleFR}}</h3>
           <p>{{plate.descriptionFR}}</p>
-          <h3>{{plate.titleEN}}</h3>
-          <p>{{plate.descriptionEN}}</p>
+          <!-- <h3>{{plate.titleEN}}</h3> -->
+          <!-- <p>{{plate.descriptionEN}}</p> -->
           <h5>{{plate.prix}}</h5><br>
         </div>
       </div>
@@ -102,11 +96,11 @@
     <div *ngFor="let plateGroup of cardDessert" class="row-halves">
       <div class="col">
         <h2>Classiques</h2><br>
-        <div *ngFor="let plate of plateGroup.classique" >
+        <div *ngFor="let plate of plateGroup.classique">
           <h3>{{ plate.titleFR}}</h3>
           <p>{{plate.descriptionFR}}</p>
-          <h3>{{plate.titleEN}}</h3>
-          <p>{{plate.descriptionEN}}</p>
+          <!-- <h3>{{plate.titleEN}}</h3> -->
+          <!-- <p>{{plate.descriptionEN}}</p> -->
           <h5>{{plate.prix}}</h5><br>
         </div>
       </div>
@@ -116,8 +110,8 @@
         <div *ngFor="let plate of plateGroup.milkshake">
           <h3>{{ plate.titleFR}}</h3>
           <p>{{plate.descriptionFR}}</p>
-          <h3>{{plate.titleEN}}</h3>
-          <p>{{plate.descriptionEN}}</p>
+          <!-- <h3>{{plate.titleEN}}</h3> -->
+          <!-- <p>{{plate.descriptionEN}}</p> -->
           <h5>{{plate.prix}}</h5><br>
         </div>
       </div>
@@ -128,7 +122,7 @@
   <section *ngIf="router.url === '/restaurant/drink'" class="item-4">
     <h1>Drinks</h1>
   </section>
-  <div *ngIf="router.url === '/restaurant/drink'" id="drinks" class="drop-dwn">
+  <div *ngIf="router.url === '/restaurant/drink'" id="drinks" class="centered drop-dwn">
     <div class="row">
       <div class="col">
         <h2 class="title">For your liver</h2>
@@ -148,17 +142,7 @@
       </div>
     </div>
   </div>
-
-</div>
-
-<div class="text-center m-5">
-  <p *ngIf="router.url === '/restaurant/dinner'">Dessert</p>
-  <p *ngIf="router.url === '/restaurant/dessert'">Drink</p>
-  <p *ngIf="router.url === '/restaurant/drink'">Lunch</p>
-  <p *ngIf="router.url === '/restaurant/lunch'">Dinner</p>
-  <span class="material-icons">
-    keyboard_arrow_down
-  </span>
+  
 </div>
 
 <app-infos-scrolling></app-infos-scrolling>

@@ -1,0 +1,81 @@
+/* ARROWS ANIMATIONS */
+@keyframes direction_right_left {
+  0% {
+    transform: translateX(0px)
+  }
+
+  100% {
+    transform: translateX(15px);
+  }
+}
+
+@keyframes direction_top_bottom {
+  0% {
+    transform: translateY(0px)
+  }
+
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+.material-icons {
+  font-size: 9em;
+}
+
+
+.material-icons-right-left {
+  animation: direction_right_left 1s linear alternate infinite;
+}
+
+.material-icons-top-bottom {
+  animation: direction_top_bottom 1s linear alternate infinite;
+}
+
+
+/* ARROWS */
+
+.arrow-right {
+  position: absolute;
+  z-index: 30;
+  right: -2%;
+  bottom: 50%;
+}
+
+.arrow-left {
+  position: absolute;
+  z-index: 30;
+  left: -4%;
+  bottom: 50%;
+}
+
+.arrow-up {
+  position: absolute;
+  z-index: 30;
+  top: -2%;
+  right: 42%;
+}
+
+.arrow-down {
+  position: absolute;
+  z-index: 30;
+  bottom: 2%;
+  right: 42%;
+}
+.arrow-down p{
+  margin-bottom: -30%;
+}
+.arrow-up p{
+  margin-top: -26%;
+}
+
+.arrow-left p{
+  margin-left:3.2em;
+}
+.black {
+  color:black;
+}
+.black p{
+  font-size: 1.4em;
+  font-weight: bold;
+}

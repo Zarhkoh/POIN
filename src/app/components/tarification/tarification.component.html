@@ -1,6 +1,12 @@
+<div id="bottomURL">{{bottomURL}}</div>
+<div id="topURL">{{topURL}}</div>
+<div id="leftURL">{{leftURL}}</div>
+<div id="rightURL">{{rightURL}}</div>
+
 <div id="meteo-tiny">
   <app-meteo-tiny></app-meteo-tiny>
 </div>
+
 <div id="wrapper">
   <section *ngIf="router.url === '/tarification/room-service'" class="item-1">
     <h1>Room-Service</h1>
@@ -47,7 +53,7 @@
   <section *ngIf="router.url === '/tarification/mini-bar'" class="item-2">
     <h1>Mini-bar</h1>
   </section>
-  <div *ngIf="router.url === '/tarification/mini-bar'" id="dinner" class="drop-dwn">
+  <div *ngIf="router.url === '/tarification/mini-bar'" id="dinner" class="centered drop-dwn">
     <div class="row">
       <div class="col">
         <h2 class="title">Boissons et snacks</h2>
@@ -72,7 +78,7 @@
   <section *ngIf="router.url === '/tarification/multimedia'" class="item-3">
     <h1>Multimedia</h1>
   </section>
-  <div *ngIf="router.url === '/tarification/multimedia'" id="desserts" class="drop-dwn">
+  <div *ngIf="router.url === '/tarification/multimedia'" id="desserts" class="centered drop-dwn">
     <div class="row">
       <div class="col">
         <h2 class="title">WIFI et Pack TV</h2>
@@ -91,14 +97,14 @@
       </div>
       <h2 class="col">Pack TV</h2>
       <div class="row">
-        <p class="col-3">Prestations</p>
-        <p class="col-3">Prix/Jour</p>
-        <p class="col-3">Prix/Semaine</p>
+        <p class="col-4">Prestations</p>
+        <p class="col-4">Prix/Jour</p>
+        <p class="col-4">Prix/Semaine</p>
       </div>
       <div *ngFor="let tarif of type.pack_tv" class="row">
-        <p class="col-3">{{tarif.prestation}}</p>
-        <p class="col-3">{{tarif.prix_day}}</p>
-        <p class="col-3">{{tarif.prix_week}}</p>
+        <p class="col-4">{{tarif.prestation}}</p>
+        <p class="col-4">{{tarif.prix_day}}</p>
+        <p class="col-4">{{tarif.prix_week}}</p>
       </div>
     </div>
   </div>
@@ -106,7 +112,7 @@
   <section *ngIf="router.url === '/tarification/laundry'" class="item-4">
     <h1>Laundry</h1>
   </section>
-  <div *ngIf="router.url === '/tarification/laundry'" id="drinks" class="drop-dwn">
+  <div *ngIf="router.url === '/tarification/laundry'" id="drinks" class="drop-dwn centered">
     <div class="row">
       <div class="col">
         <h2 class="title">Blanchisserie</h2>
@@ -120,4 +126,5 @@
   </div>
 
 </div>
+
 <app-infos-scrolling></app-infos-scrolling>

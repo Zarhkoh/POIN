@@ -14,6 +14,7 @@ import { TarificationComponent } from './components/tarification/tarification.co
 import { RestaurantComponent } from './components/restaurant/restaurant.component';
 import { ActivitiesComponent } from './components/activities/activities.component';
 import { HotelAdsComponent } from './components/hotel-ads/hotel-ads.component';
+import { ArrowsComponent } from './components/arrows/arrows.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HotelAdsComponent } from './components/hotel-ads/hotel-ads.component';
     TarificationComponent,
     RestaurantComponent,
     ActivitiesComponent,
-    HotelAdsComponent
+    HotelAdsComponent,
+    ArrowsComponent
   ],
   imports: [
     BrowserModule,
