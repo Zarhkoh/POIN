@@ -7,17 +7,6 @@
   <app-meteo-tiny></app-meteo-tiny>
 </div>
 
-<div class="text-center m-5">
-  <span class="material-icons material-icons-top-bottom">
-    keyboard_arrow_up
-  </span>
-  <p *ngIf="router.url === '/tarification/room-service'">Home</p>
-  <p *ngIf="router.url === '/tarification/mini-bar'">Multimedia</p>
-  <p *ngIf="router.url === '/tarification/laundry'">Mini-bar</p>
-  <p *ngIf="router.url === '/tarification/multimedia'">Room-service</p>
-</div>
-
-
 <div id="wrapper">
   <section *ngIf="router.url === '/tarification/room-service'" class="item-1">
     <h1>Room-Service</h1>
@@ -138,32 +127,4 @@
 
 </div>
 
-<div>
-  <!--  <app-gesture></app-gesture>-->
-  <div *ngIf="router.url === '/tarification/room-service'" class="col arrow-right">
-    <span class="material-icons material-icons-right-left">
-      keyboard_arrow_right
-    </span>
-    <p>Restaurant</p>
-  </div>
-  <div class="col arrow-left">
-    <span class="material-icons material-icons-right-left">
-      keyboard_arrow_left
-    </span>
-    <p *ngIf="router.url === '/tarification/room-service'">Activités</p>
-    <p *ngIf="router.url === '/tarification/mini-bar'">Lunch</p>
-    <p *ngIf="router.url === '/tarification/laundry'">Lunch</p>
-    <p *ngIf="router.url === '/tarification/multimedia'">Lunch</p>
-  </div>
-</div>
-
-<div class="text-center m-5">
-  <p *ngIf="router.url === '/tarification/room-service'">Multimedia</p>
-  <p *ngIf="router.url === '/tarification/mini-bar'">Laundry</p>
-  <p *ngIf="router.url === '/tarification/laundry'">Room-service</p>
-  <p *ngIf="router.url === '/tarification/multimedia'">Mini-bar</p>
-  <span class="material-icons material-icons-top-bottom">
-    keyboard_arrow_down
-  </span>
-</div>
 <app-infos-scrolling></app-infos-scrolling>

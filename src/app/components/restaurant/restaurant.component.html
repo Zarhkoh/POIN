@@ -7,16 +7,6 @@
   <app-meteo-tiny></app-meteo-tiny>
 </div>
 
-<div class="text-center m-5">
-  <span class="material-icons material-icons-top-bottom">
-    keyboard_arrow_up
-  </span>
-  <p *ngIf="router.url === '/restaurant/drink'">Dessert</p>
-  <p *ngIf="router.url === '/restaurant/lunch'">Home</p>
-  <p *ngIf="router.url === '/restaurant/dinner'">Lunch</p>
-  <p *ngIf="router.url === '/restaurant/dessert'">Dinner</p>
-</div>
-
 <div id="wrapper">
   <section *ngIf="router.url === '/restaurant/lunch'" class="item-1">
     <h1>Lunch</h1>
@@ -154,35 +144,6 @@
     </div>
   </div>
 
-</div>
-
-<div>
-  <!--  <app-gesture></app-gesture>-->
-  <div *ngIf="router.url === '/restaurant/lunch'" class="col arrow-right">
-    <span class="material-icons material-icons-right-left">
-      keyboard_arrow_right
-    </span>
-    <p>Home</p>
-  </div>
-  <div class="col arrow-left">
-    <span class="material-icons material-icons-right-left">
-      keyboard_arrow_left
-    </span>
-    <p *ngIf="router.url === '/restaurant/lunch'">Tarification</p>
-    <p *ngIf="router.url === '/restaurant/dinner'">Lunch</p>
-    <p *ngIf="router.url === '/restaurant/dessert'">Lunch</p>
-    <p *ngIf="router.url === '/restaurant/drink'">Lunch</p>
-  </div>
-</div>
-
-<div class="text-center m-5">
-  <p *ngIf="router.url === '/restaurant/dinner'">Dessert</p>
-  <p *ngIf="router.url === '/restaurant/dessert'">Drink</p>
-  <p *ngIf="router.url === '/restaurant/drink'">Lunch</p>
-  <p *ngIf="router.url === '/restaurant/lunch'">Dinner</p>
-  <span class="material-icons material-icons-top-bottom">
-    keyboard_arrow_down
-  </span>
 </div>
 
 <app-infos-scrolling></app-infos-scrolling>
