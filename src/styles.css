@@ -63,7 +63,7 @@ video {
 
 /***************ARROWS****************/
 
-.material-icons-right-left{
+/* .material-icons-right-left{
   font-size : 50px !important;
   animation: direction_right_left 1s linear alternate infinite;
 }
@@ -83,4 +83,4 @@ video {
   z-index: 1000;
   top: 50%;
   left:1%;
-}
+} */
