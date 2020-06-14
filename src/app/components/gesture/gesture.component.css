@@ -1,0 +1,17 @@
+@keyframes handWave {
+  0% {
+    transform:rotate(-50deg)
+  }
+
+  100% {
+    transform:rotate(-15deg) ;
+  }
+}
+
+img {
+  animation: handWave 1s linear alternate infinite;
+}
+
+p {
+  text-align: center;
+}

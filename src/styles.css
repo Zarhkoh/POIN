@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  color: rgb(224, 224, 224);
+}
+
+.canvasbox {
+  border-radius: 3px;
+  margin-right: 10px;
+  width: 450px;
+  height: 338px;
+  border-bottom: 3px solid #0063FF;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 #00000030;
+  background: #333;
+
+}
+
+.mb10 {
+  margin-bottom: 10px
+}
+
+.mt10 {
+  margin-top: 10px
+}
+
+.updatenote {
+  padding: 10px;
+  background: rgb(245, 147, 20);
+  color: white;
+  display: inline;
+}
+
+video {
+  display: none;
+}
+
+.canvasbox {
+  /* width: 28%;
+  height: 12%; */
+  width: 150px;
+  height: 160px;
+  opacity: 50%;
+  position: absolute;
+  z-index: 10;
+}

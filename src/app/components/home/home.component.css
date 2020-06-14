@@ -1,0 +1,11 @@
+#meteo-tiny {
+  display: flex;
+  justify-content: center;
+}
+
+#bottomURL,
+#topURL,
+#leftURL,
+#rightURL {
+  display: none;
+}
