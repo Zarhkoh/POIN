@@ -18,7 +18,7 @@ export class RestaurantComponent implements OnInit {
   cardDinner;
   cardDessert;
   cardDrink;
-  
+
   constructor(
     private router: Router,
     private restaurantService: RestaurantService) { }
