@@ -18,6 +18,7 @@ export class RestaurantComponent implements OnInit {
   cardDinner;
   cardDessert;
   cardDrink;
+  cardDessertBack;
 
   constructor(
     private router: Router,
@@ -27,7 +28,7 @@ export class RestaurantComponent implements OnInit {
     this.manageURL();
     this.getCardLunch();
     this.getCardDinner();
-    this.getCardDessert();
+    this.getCardDessertBack();
     this.getCardDrink();
   }
 
@@ -45,6 +46,10 @@ export class RestaurantComponent implements OnInit {
 
   getCardDrink(){
     this.restaurantService.getCardDrink().subscribe((data)=> this.cardDrink = data)
+  }
+
+  getCardDessertBack(){
+    this.restaurantService.getCardDessertBack().subscribe((data)=> this.cardDessertBack = data)
   }
 
   manageURL() {

@@ -125,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "POIN"
+  "defaultProject": "POIN",
+  "cli": {
+    "analytics": false
+  }
 }
