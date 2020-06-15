@@ -14,10 +14,7 @@ export class RestaurantComponent implements OnInit {
   leftURL;
   rightURL;
 
-  cardLunch;
-  cardDinner;
-  cardDessert;
-  cardDrink;
+  restaurantCard: object;
 
   constructor(
     private router: Router,
@@ -25,26 +22,16 @@ export class RestaurantComponent implements OnInit {
 
   ngOnInit() {
     this.manageURL();
-    this.getCardLunch();
-    this.getCardDinner();
-    this.getCardDessert();
-    this.getCardDrink();
+    this.getRestaurantCard();
   }
 
-  getCardLunch(){
-    this.restaurantService.getCardLunch().subscribe((data)=> this.cardLunch = data)
-  }
-
-  getCardDinner(){
-    this.restaurantService.getCardDinner().subscribe((data)=> this.cardDinner = data)
-  }
-
-  getCardDessert(){
-    this.restaurantService.getCardDessert().subscribe((data)=> this.cardDessert = data)
-  }
-
-  getCardDrink(){
-    this.restaurantService.getCardDrink().subscribe((data)=> this.cardDrink = data)
+  /**
+   * Get all information from the restaurant menu and assigns it to @restaurantCard variable.
+   */
+  getRestaurantCard() {
+    this.restaurantService.getMenuCard().subscribe((data) => {
+      this.restaurantCard = data;
+    });
   }
 
   manageURL() {
