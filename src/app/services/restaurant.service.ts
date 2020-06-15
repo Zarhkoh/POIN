@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -9,23 +10,14 @@ export class RestaurantService {
 
   constructor(private http: HttpClient) { }
 
-  getCardLunch() {
-    return this.http.get(this.url + "/lunch.json");
-  }
-  getCardDinner() {
-    return this.http.get(this.url + "/dinner.json");
-  }
-  getCardDessert() {
-    return this.http.get(this.url + "/dessert.json");
-  }
-  getCardDrink() {
-    return this.http.get(this.url + "/drink.json");
+  // Miho BACK
+  getMenuCard() {
+    return this.http.get(environment.apiHotelUrl + '/restaurant/menu');
   }
 
-  // MIHO BACK
-  getCardDessertBack() {
-    console.log(this.http.get('http://localhost:3000/desserts'));
-    return this.http.get('http://localhost:3000/desserts');
+  // Mock re-worked to better match the database
+  getMenuCardMock() {
+    return this.http.get(this.url + '/menuCard.json');
   }
 
 }

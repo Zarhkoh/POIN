@@ -18,31 +18,30 @@
       </div>
     </div>
 
-
-    <div *ngFor="let plateGroup of cardLunch" class="row-halves">
-      <div class="col">
-        <h2>Sandwiches</h2><br>
-        <div *ngFor="let plate of plateGroup.sandwiches">
-          <h3>{{ plate.titleFR}}</h3>
-          <p>{{plate.descriptionFR}}</p>
-          <!-- <h3>{{plate.titleEN}}</h3> -->
-          <!-- <p>{{plate.descriptionEN}}</p> -->
-          <h5>{{plate.prix}}</h5><br>
+    <div *ngIf="restaurantCard">
+      <div *ngFor="let plateGroup of restaurantCard[0].lunch" class="row-halves">
+        <div class="col">
+          <h2>Sandwiches</h2><br>
+          <div *ngFor="let plate of plateGroup.sandwiches">
+            <h3>{{ plate.titleFR}}</h3>
+            <p>{{plate.descriptionFR}}</p>
+            <!-- <h3>{{plate.titleEN}}</h3> -->
+            <!-- <p>{{plate.descriptionEN}}</p> -->
+            <h5>{{plate.prix}}</h5><br>
+          </div>
         </div>
-      </div>
-
-      <div class="col">
-        <h2>Wrap</h2><br>
-        <div *ngFor="let plate of plateGroup.wraps">
-          <h3>{{ plate.titleFR}}</h3>
-          <p>{{plate.descriptionFR}}</p>
-          <!-- <h3>{{plate.titleEN}}</h3> -->
-          <!-- <p>{{plate.descriptionEN}}</p> -->
-          <h5>{{plate.prix}}</h5><br>
+        <div class="col">
+          <h2>Wrap</h2><br>
+          <div *ngFor="let plate of plateGroup.wraps">
+            <h3>{{ plate.titleFR}}</h3>
+            <p>{{plate.descriptionFR}}</p>
+            <!-- <h3>{{plate.titleEN}}</h3> -->
+            <!-- <p>{{plate.descriptionEN}}</p> -->
+            <h5>{{plate.prix}}</h5><br>
+          </div>
         </div>
       </div>
     </div>
-
   </div>
 
   <section *ngIf="router.url === '/restaurant/dinner'" class="item-2">
@@ -56,30 +55,30 @@
     </div>
 
 
-    <div *ngFor="let plateGroup of cardDinner" class="row-halves">
-      <div class="col">
-        <h2>Steaks</h2><br>
-        <div *ngFor="let plate of plateGroup.steaks">
-          <h3>{{ plate.titleFR}}</h3>
-          <p>{{plate.descriptionFR}}</p>
-          <!-- <h3>{{plate.titleEN}}</h3> -->
-          <!-- <p>{{plate.descriptionEN}}</p> -->
-          <h5>{{plate.prix}}</h5><br>
+    <div *ngIf="restaurantCard">
+      <div *ngFor="let plateGroup of restaurantCard[0].dinner" class="row-halves">
+        <div class="col">
+          <h2>Steaks</h2><br>
+          <div *ngFor="let plate of plateGroup.steaks">
+            <h3>{{ plate.titleFR}}</h3>
+            <p>{{plate.descriptionFR}}</p>
+            <!-- <h3>{{plate.titleEN}}</h3> -->
+            <!-- <p>{{plate.descriptionEN}}</p> -->
+            <h5>{{plate.prix}}</h5><br>
+          </div>
         </div>
-      </div>
-
-      <div class="col">
-        <h2>Burger</h2><br>
-        <div *ngFor="let plate of plateGroup.burgers">
-          <h3>{{ plate.titleFR}}</h3>
-          <p>{{plate.descriptionFR}}</p>
-          <!-- <h3>{{plate.titleEN}}</h3> -->
-          <!-- <p>{{plate.descriptionEN}}</p> -->
-          <h5>{{plate.prix}}</h5><br>
+        <div class="col">
+          <h2>Burger</h2><br>
+          <div *ngFor="let plate of plateGroup.burgers">
+            <h3>{{ plate.titleFR}}</h3>
+            <p>{{plate.descriptionFR}}</p>
+            <!-- <h3>{{plate.titleEN}}</h3> -->
+            <!-- <p>{{plate.descriptionEN}}</p> -->
+            <h5>{{plate.prix}}</h5><br>
+          </div>
         </div>
       </div>
     </div>
-
   </div>
 
   <section *ngIf="router.url === '/restaurant/dessert'" class="item-3">
@@ -93,30 +92,31 @@
     </div>
 
 
-    <div *ngFor="let plateGroup of cardDessertBack" class="row-halves">
-      <div class="col">
-        <h2>Classiques</h2><br>
-        <div *ngFor="let plate of plateGroup.classique">
-          <h3>{{plate.titleFR}}</h3>
-          <p>{{plate.descriptionFR}}</p>
-          <!-- <h3>{{plate.titleEN}}</h3> -->
-          <!-- <p>{{plate.descriptionEN}}</p> -->
-          <h5>{{plate.prix}}</h5><br>
+    <div *ngIf="restaurantCard">
+      <div *ngFor="let plateGroup of restaurantCard[0].dessert" class="row-halves">
+        <div class="col">
+          <h2>Classiques</h2><br>
+          <div *ngFor="let plate of plateGroup.classique">
+            <h3>{{ plate.titleFR}}</h3>
+            <p>{{plate.descriptionFR}}</p>
+            <!-- <h3>{{plate.titleEN}}</h3> -->
+            <!-- <p>{{plate.descriptionEN}}</p> -->
+            <h5>{{plate.prix}}</h5><br>
+          </div>
         </div>
-      </div>
 
-      <div class="col">
-        <h2>MilkShakes</h2><br>
-        <div *ngFor="let plate of plateGroup.milkshake">
-          <h3>{{ plate.titleFR}}</h3>
-          <p>{{plate.descriptionFR}}</p>
-          <!-- <h3>{{plate.titleEN}}</h3> -->
-          <!-- <p>{{plate.descriptionEN}}</p> -->
-          <h5>{{plate.prix}}</h5><br>
+        <div class="col">
+          <h2>MilkShakes</h2><br>
+          <div *ngFor="let plate of plateGroup.milkshake">
+            <h3>{{ plate.titleFR}}</h3>
+            <p>{{plate.descriptionFR}}</p>
+            <!-- <h3>{{plate.titleEN}}</h3> -->
+            <!-- <p>{{plate.descriptionEN}}</p> -->
+            <h5>{{plate.prix}}</h5><br>
+          </div>
         </div>
       </div>
     </div>
-
   </div>
 
   <section *ngIf="router.url === '/restaurant/drink'" class="item-4">
@@ -129,20 +129,21 @@
       </div>
     </div>
 
-    <div *ngFor="let type of cardDrink">
-      <h2 class="col">Boissons</h2>
-      <div *ngFor="let drink of type.bieres" class="row">
-        <p class="col-6">{{drink.title}}</p>
-        <p class="col-6">{{drink.prix}}</p>
-      </div>
-      <h2 class="col">Softs</h2>
-      <div *ngFor="let drink of type.soft" class="row">
-        <p class="col-6">{{drink.title}}</p>
-        <p class="col-6">{{drink.prix}}
+    <div *ngIf="restaurantCard">
+      <div *ngFor="let type of restaurantCard[0].drink">
+        <h2 class="col">Boissons</h2>
+        <div *ngFor="let drink of type.bieres" class="row">
+          <p class="col-6">{{drink.title}}</p>
+          <p class="col-6">{{drink.prix}}</p>
+        </div>
+        <h2 class="col">Softs</h2>
+        <div *ngFor="let drink of type.soft" class="row">
+          <p class="col-6">{{drink.title}}</p>
+          <p class="col-6">{{drink.prix}}
+        </div>
       </div>
     </div>
   </div>
-
 </div>
 
 <app-infos-scrolling></app-infos-scrolling>

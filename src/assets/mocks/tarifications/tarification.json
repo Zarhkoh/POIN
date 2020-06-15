@@ -1,0 +1,134 @@
+[{
+  "laundry": [
+    {
+      "id": 1,
+      "piece": "Robe",
+      "prix" : "7€"
+    },
+    {
+      "id": 2,
+      "piece": "Chemise",
+      "prix" : "6€"
+    },
+    {
+      "id": 3,
+      "piece": "T-shirt",
+      "prix" : "4€"
+    },
+    {
+      "id": 4,
+      "piece": "Pantalon",
+      "prix" : "5€"
+    },
+    {
+      "id": 5,
+      "piece": "veste de costume",
+      "prix" : "6€"
+    },
+    {
+      "id": 6,
+      "piece": "cravate",
+      "prix" : "3€"
+    }
+  ],
+  "minibar": [{
+    "boissons": [
+      {
+        "id": 1,
+        "title": "Vittel 50cl",
+        "prix" : "5€"
+      },
+      {
+        "id": 2,
+        "title": "San Pellegrino 50cl",
+        "prix" : "5€"
+      },
+      {
+        "id": 3,
+        "title": "Jus d'orange 20cl",
+        "prix" : "5€"
+      }
+    ],
+    "snack": [
+      {
+        "id": 1,
+        "title": "Petits gateaux",
+        "prix" : "4€"
+      },
+      {
+        "id": 2,
+        "title": "Chips",
+        "prix" : "3€"
+      },
+      {
+        "id": 2,
+        "title": "Cacahuètes",
+        "prix" : "3€"
+      }
+    ]
+  }],
+  "multimedia": [{
+    "wifi": [
+      {
+        "id": 1,
+        "prestation": "Wifi à la journée",
+        "prix" : "4€"
+      },
+      {
+        "id": 2,
+        "prestation": "Wifi à la semaine",
+        "prix" : "15€"
+      }
+    ],
+    "pack_tv": [
+      {
+        "id": 1,
+        "prestation": "Pack Canal+",
+        "prix_day" : "4€",
+        "prix_week": "15€"
+      },
+      {
+        "id": 2,
+        "prestation": "Pack OCS",
+        "prix_day" : "2€",
+        "prix_week": "8€"
+      },
+      {
+        "id": 2,
+        "prestation": "Netflix",
+        "prix_day" : "2€",
+        "prix_week": "8€"
+      }
+    ]
+  }],
+  "roomservice": [{
+    "plateau_tv": [
+      {
+        "id": 1,
+        "titleFR": "Saumon fumé, foie gras, aubergines",
+        "titleEN": "Smoked salmon, duck foie gras, eggplant",
+        "descriptionFR": "Cœur de saumon fumé par nos soins, tomates confites, pépites de foie gras de canard au sésame, caviar d’aubergines et ses toasts dorés",
+        "descriptionEN": "home-smoked salmon, confit tomatoes, duck foie gras with sesame seeds, eggplant caviar, toasts",
+        "prix" : "29€"
+      },
+      {
+        "id": 2,
+        "titleFR": "Saumon fumé, foie gras, aubergines",
+        "titleEN": "Smoked salmon, duck foie gras, eggplant",
+        "descriptionFR": "Cœur de saumon fumé par nos soins, tomates confites, pépites de foie gras de canard au sésame, caviar d’aubergines et ses toasts dorés",
+        "descriptionEN": "home-smoked salmon, confit tomatoes, duck foie gras with sesame seeds, eggplant caviar, toasts",
+        "prix" : "29€"
+      }
+    ],
+    "petit_dejeuner": [
+      {
+        "id": 1,
+        "titleFR": "Petit déjeuner parisien",
+        "titleEN": "Parisian breakfast",
+        "descriptionFR": "1 boisson chaude + 1 croissant + 1 petit pain + beurre + confiture + 1 jus de fruits",
+        "descriptionEN": "1 hot beverage + 1 croissant + 1 bread roll + Cornflakes 5,20 butter + jam + 1 fruit juice",
+        "prix" : "13€"
+      }
+    ]
+  }]
+}]

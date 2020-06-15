@@ -14,10 +14,7 @@ export class TarificationComponent implements OnInit {
   leftURL;
   rightURL;
 
-  tarifRoomService;
-  tarifMiniBar;
-  tarifMultimedia;
-  tarifLaundry;
+  allTarifications;
 
   constructor(
     private router: Router,
@@ -25,26 +22,13 @@ export class TarificationComponent implements OnInit {
 
   ngOnInit() {
     this.manageURL();
-    this.getTarifRoomService();
-    this.getTarifMiniBar();
-    this.getTarifMultimedia();
-    this.getTarifLaundry();
+    this.getTarifications();
   }
 
-  getTarifRoomService(){
-    this.tarificationService.getTarificationRoomService().subscribe((data) => this.tarifRoomService = data);
-  }
-
-  getTarifMiniBar(){
-    this.tarificationService.getTarificationMiniBar().subscribe((data) => this.tarifMiniBar = data);
-  }
-
-  getTarifMultimedia(){
-    this.tarificationService.getTarificationMultimedia().subscribe((data) => this.tarifMultimedia = data);
-  }
-
-  getTarifLaundry(){
-    this.tarificationService.getTarificationLaundry().subscribe((data) => this.tarifLaundry = data);
+  getTarifications() {
+    this.tarificationService.getTarifications().subscribe((data) => {
+      this.allTarifications = data;
+    });
   }
 
 
