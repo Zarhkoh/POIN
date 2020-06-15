@@ -3,7 +3,7 @@
     <div  class="scrolling-infos d-flex flex-row mt-3 mb-2 justify-content-between">
         <div id="gradientStart"></div>
         <div  class="infos d-flex position-absolute">
-            <div *ngFor="let information of informations">
+            <div *ngFor="let information of informations[i]; let i = index;">
                 <p><b>{{information.message}}</b></p>
             </div>
             
