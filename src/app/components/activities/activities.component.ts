@@ -7,7 +7,7 @@ import { ActivitiesService } from 'src/app/services/activities.service';
   styleUrls: ['./activities.component.css']
 })
 export class ActivitiesComponent implements OnInit {
-  
+
   baseURL = "http://localhost:4200/";
   topURL = this.baseURL;
   bottomURL = this.baseURL + "plan/";
@@ -15,7 +15,7 @@ export class ActivitiesComponent implements OnInit {
   rightURL = this.baseURL + "tarification/room-service/";
 
   activities;
-  constructor(private activitiesService: ActivitiesService) { 
+  constructor(private activitiesService: ActivitiesService) {
   }
 
   ngOnInit() {
@@ -23,6 +23,6 @@ export class ActivitiesComponent implements OnInit {
   }
 
   getAllActivities(){
-    this.activities = this.activitiesService.getAllActivities().subscribe((data) => this.activities = data);
+    this.activities = this.activitiesService.getActivites().subscribe((data) => this.activities = data);
   }
 }

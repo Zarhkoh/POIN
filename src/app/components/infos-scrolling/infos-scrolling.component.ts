@@ -16,8 +16,9 @@ export class InfosScrollingComponent implements OnInit {
   }
 
   getAllInformations(){
-    this.informations = this.scrollingInformationsService.getAllInformations().subscribe((data) => {
+    this.informations = this.scrollingInformationsService.getInformations().subscribe((data) => {
       this.informations = data;
+      console.log(this.informations);
     });
   }
 }
