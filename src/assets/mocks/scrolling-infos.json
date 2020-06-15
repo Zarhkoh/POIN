@@ -1,4 +1,5 @@
 [{
+  "information": [{
     "id": 1,
     "message": "Le spa ouvrira ses portes dans 15 minutes."
   },{
@@ -10,5 +11,5 @@
   },{
     "id": 4,
     "message": "Happy hour au bar de 18h à 20h."
-  }
-]
+  }]
+}]
