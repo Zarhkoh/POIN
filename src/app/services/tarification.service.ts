@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -10,16 +11,11 @@ export class TarificationService {
 
   constructor(private http: HttpClient) { }
 
-  getTarificationRoomService() {
-    return this.http.get(this.url + "/roomservice.json");
+  getTarificationsMock() {
+    return this.http.get(this.url + '/tarification.json');
   }
-  getTarificationMiniBar() {
-    return this.http.get(this.url + "/minibar.json");
-  }
-  getTarificationMultimedia() {
-    return this.http.get(this.url + "/multimedia.json");
-  }
-  getTarificationLaundry() {
-    return this.http.get(this.url + "/laundry.json");
+
+  getTarifications() {
+    return this.http.get(environment.apiHotelUrl + '/tarifications');
   }
 }

@@ -12,7 +12,7 @@ export class RestaurantService {
 
   // Miho BACK
   getMenuCard() {
-    return this.http.get(environment.apiHotelUrl + '/menu');
+    return this.http.get(environment.apiHotelUrl + '/restaurant/menu');
   }
 
   // Mock re-worked to better match the database

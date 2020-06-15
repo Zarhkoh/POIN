@@ -19,35 +19,37 @@
       </div>
     </div>
 
-    <div *ngFor="let type_plate of tarifRoomService" class="row-halves">
-      <div class="col">
-        <h2>Plateau TV</h2><br>
-        <div *ngFor="let tarif of type_plate.plateau_tv" >
-          <h3>{{ tarif.titleFR}}</h3>
-          <p>{{tarif.descriptionFR}}</p>
-          <h3>{{tarif.titleEN}}</h3>
-          <p>{{tarif.descriptionEN}}</p>
-          <h5>{{tarif.prix}}</h5><br>
+    <div *ngIf="allTarifications">
+      <div *ngFor="let type_plate of allTarifications[0].roomservice" class="row-halves">
+        <div class="col">
+          <h2>Plateau TV</h2><br>
+          <div *ngFor="let tarif of type_plate.plateau_tv" >
+            <h3>{{ tarif.titleFR}}</h3>
+            <p>{{tarif.descriptionFR}}</p>
+            <h3>{{tarif.titleEN}}</h3>
+            <p>{{tarif.descriptionEN}}</p>
+            <h5>{{tarif.prix}}</h5><br>
+          </div>
+        </div>
+  
+        <div class="col">
+          <h2>Petit déjeuner</h2><br>
+          <div *ngFor="let tarif of type_plate.petit_dejeuner">
+            <h3>{{ tarif.titleFR}}</h3>
+            <p>{{tarif.descriptionFR}}</p>
+            <h3>{{tarif.titleEN}}</h3>
+            <p>{{tarif.descriptionEN}}</p>
+            <h5>{{tarif.prix}}</h5><br>
+          </div>
         </div>
       </div>
-
-      <div class="col">
-        <h2>Petit déjeuner</h2><br>
-        <div *ngFor="let tarif of type_plate.petit_dejeuner">
-          <h3>{{ tarif.titleFR}}</h3>
-          <p>{{tarif.descriptionFR}}</p>
-          <h3>{{tarif.titleEN}}</h3>
-          <p>{{tarif.descriptionEN}}</p>
-          <h5>{{tarif.prix}}</h5><br>
-        </div>
+  
+    <div class="row">
+      <div class="col text-center">
+        <p>Tout les plats de notre carte sont disponible en room-service avec un supplément de 3€</p>
       </div>
     </div>
-
-  <div class="row">
-    <div class="col text-center">
-      <p>Tout les plats de notre carte sont disponible en room-service avec un supplément de 3€</p>
     </div>
-  </div>
   </div>
 
   <section *ngIf="router.url === '/tarification/mini-bar'" class="item-2">
@@ -60,16 +62,18 @@
       </div>
     </div>
 
-    <div *ngFor="let type of tarifMiniBar">
-      <h2 class="col">Boissons</h2>
-      <div *ngFor="let tarif of type.boissons" class="row">
-        <p class="col-6">{{tarif.title}}</p>
-        <p class="col-6">{{tarif.prix}}</p>
-      </div>
-      <h2 class="col">Snacks</h2>
-      <div *ngFor="let tarif of type.snack" class="row">
-        <p class="col-6">{{tarif.title}}</p>
-        <p class="col-6">{{tarif.prix}}
+    <div *ngIf="allTarifications">
+      <div *ngFor="let type of allTarifications[0].minibar">
+        <h2 class="col">Boissons</h2>
+        <div *ngFor="let tarif of type.boissons" class="row">
+          <p class="col-6">{{tarif.title}}</p>
+          <p class="col-6">{{tarif.prix}}</p>
+        </div>
+        <h2 class="col">Snacks</h2>
+        <div *ngFor="let tarif of type.snack" class="row">
+          <p class="col-6">{{tarif.title}}</p>
+          <p class="col-6">{{tarif.prix}}
+        </div>
       </div>
     </div>
   </div>
@@ -85,26 +89,28 @@
       </div>
     </div>
 
-    <div *ngFor="let type of tarifMultimedia">
-      <h2 class="col">Wifi</h2>
-      <div class="row">
-        <p class="col-6">Prestations</p>
-        <p class="col-6">prix</p>
-      </div>
-      <div *ngFor="let tarif of type.wifi" class="row">
-        <p class="col-6">{{tarif.prestation}}</p>
-        <p class="col-6">{{tarif.prix}}</p>
-      </div>
-      <h2 class="col">Pack TV</h2>
-      <div class="row">
-        <p class="col-4">Prestations</p>
-        <p class="col-4">Prix/Jour</p>
-        <p class="col-4">Prix/Semaine</p>
-      </div>
-      <div *ngFor="let tarif of type.pack_tv" class="row">
-        <p class="col-4">{{tarif.prestation}}</p>
-        <p class="col-4">{{tarif.prix_day}}</p>
-        <p class="col-4">{{tarif.prix_week}}</p>
+    <div *ngIf="allTarifications">
+      <div *ngFor="let type of allTarifications[0].multimedia">
+        <h2 class="col">Wifi</h2>
+        <div class="row">
+          <p class="col-6">Prestations</p>
+          <p class="col-6">prix</p>
+        </div>
+        <div *ngFor="let tarif of type.wifi" class="row">
+          <p class="col-6">{{tarif.prestation}}</p>
+          <p class="col-6">{{tarif.prix}}</p>
+        </div>
+        <h2 class="col">Pack TV</h2>
+        <div class="row">
+          <p class="col-4">Prestations</p>
+          <p class="col-4">Prix/Jour</p>
+          <p class="col-4">Prix/Semaine</p>
+        </div>
+        <div *ngFor="let tarif of type.pack_tv" class="row">
+          <p class="col-4">{{tarif.prestation}}</p>
+          <p class="col-4">{{tarif.prix_day}}</p>
+          <p class="col-4">{{tarif.prix_week}}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -119,12 +125,13 @@
       </div>
     </div>
 
-    <div *ngFor="let tarif of tarifLaundry" class="row">
-      <p class="col-6">{{tarif.piece}}</p>
-      <p class="col-6">{{tarif.prix}}</p>
+    <div *ngIf="allTarifications">
+      <div *ngFor="let tarif of allTarifications[0].laundry" class="row">
+        <p class="col-6">{{tarif.piece}}</p>
+        <p class="col-6">{{tarif.prix}}</p>
+      </div>
     </div>
   </div>
-
 </div>
 
 <app-infos-scrolling></app-infos-scrolling>
