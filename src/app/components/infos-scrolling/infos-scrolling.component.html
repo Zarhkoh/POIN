@@ -1,13 +1,15 @@
-<div class="fixed-bottom">
-    <div class="mx-auto" id="delimitation"></div>
-    <div  class="scrolling-infos d-flex flex-row mt-3 mb-2 justify-content-between">
-        <div id="gradientStart"></div>
-        <div  class="infos d-flex position-absolute">
-            <div *ngFor="let information of informations[i]; let i = index;">
-                <p><b>{{information.message}}</b></p>
+<div *ngIf="informations[0]">
+    <div class="fixed-bottom">
+        <div class="mx-auto" id="delimitation"></div>
+        <div  class="scrolling-infos d-flex flex-row mt-3 mb-2 justify-content-between">
+            <div id="gradientStart"></div>
+            <div  class="infos d-flex position-absolute">
+                <div *ngFor="let information of informations[0].information">
+                    <p><b>{{ information.message}}</b></p>
+                </div>
+                
             </div>
-            
+            <div id="gradientEnd">invisible</div>
         </div>
-        <div id="gradientEnd">invisible</div>
     </div>
 </div>
